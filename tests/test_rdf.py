@@ -45,7 +45,6 @@ def test_rdf():
     error=0
     for i in range(nbins):
         error+= (rdf_py[i]-rdf_c[i])**2
-    print ("ok")
     assert (error < 0.5)
 
 # test_rdf_c()

@@ -1,11 +1,18 @@
-all: test wheel
+#Makefile
 
-test: install
+test: clean
 	python setup.py pytest
 
-install:
-	python setup.py install
+pip: git clean
+	python setup.py sdist bdist_wheel --universal # Universal mian python2/3
+	twine upload dist/ifalib-*.tar.gz
 
-wheel: install
-	python setup.py bdist_wheel
+clean:
+	rm -rf *.egg-info
+	rm -rf build
+	rm -rf dist
 
+git: clean
+	git add *
+	git commit -m "New commit"
+	git push
