@@ -1,14 +1,27 @@
+#!/usr/bin/python
+"""! @brief Radial Distribution Analysis"""
+##
+# @mainpage RDF analysis
+#
+# @section rdf RDF
+# RDF analysis for MD coordinates
+#
+# @file rdf.py
+#
+# @section todo_rdf TODO
+# - None.
+
 import os, glob
 import ctypes 
 
-# Загрузка библиотеки
+# Load Library
 basedir = os.path.abspath(os.path.dirname(__file__))
 libpath = os.path.join(basedir, 'librdf*.so')
 libpath = glob.glob(libpath)[0]
 rdf_ctypes = ctypes.CDLL(libpath)
 
 def rdf_two_types_many_steps(coord1, coord2, cell, rcut, nbins=100): 
-    '''!Radial Distribution Function between two types of particles for several steps
+    '''! Radial Distribution Function between two types of particles for several steps
     density for RDF calculate by number of 2nd particles (len(coord2[0])).
     @param coord1,coord2 XYZ coordinates of 1,2-nd type particles, format 
         coord[Nstep][Nparticles][Dimension]
@@ -49,7 +62,7 @@ def rdf_two_types_many_steps(coord1, coord2, cell, rcut, nbins=100):
     return bins, list(rdf_c_double)
 
 def rdf_one_type_one_step(coord, cell, rcut,nbins):
-    '''!Radial Distribution Function between particles for one step only
+    '''! Radial Distribution Function between particles for one step only
     @param coord XYZ coordinates of particles, format:
         coord[Nparticles][Dimension]
     @param cell Size of cubic cell
@@ -88,8 +101,8 @@ def get_nearest_axes(r1,r2,cell):
         
     return dx
 
-def rdf_one_type_one_step_python(r_list, cell, rcut,nbins):
-    '''!Radial Distribution Function between particles for one step only
+def rdf_one_type_one_step_python(coord, cell, rcut,nbins):
+    '''! Radial Distribution Function between particles for one step only
     Python Version (SLOW) of rdf_one_type_one_step
     @param coord XYZ coordinates of particles, format:
         coord[Nparticles][Dimension]
