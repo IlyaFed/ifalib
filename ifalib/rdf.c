@@ -12,7 +12,7 @@ extern "C" {
 
 int get_nearests(double x1, double x2, double cell, double rcut);
 int get_distances(double * r1, double * r2, double cell, double rcut);
-int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nrho, int Nsteps, double * Rpart1, double * Rpart2, double cell);
+int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps, double * Rpart1, double * Rpart2, double cell);
 
 #ifdef  __cplusplus
 }
@@ -91,14 +91,14 @@ int get_distances(double * r1, double * r2, double cell, double rcut){
     return 0;
 }
 
-int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nrho, int Nsteps, double * Rpart1, double * Rpart2, double cell){
-    double rho = Nrho/(cell*cell*cell);
+int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps, double * Rpart1, double * Rpart2, double cell){
+    double rho = Npart2/(cell*cell*cell);
     double r_list[Npart1*Npart2*Nsteps];
     int r_list_id=0;
     for (int step=0; step < Nsteps; step++)
         for (int i=0; i < Npart1; i++)
             for (int j=0; j<Npart2; j++){
-                get_distances(&Rpart1[i*3+step*Npart1], &Rpart2[j*3+step*Npart2],cell, rcut);
+                get_distances(&Rpart1[3*Npart1*step+i*3], &Rpart2[3*Npart2*step+j*3],cell, rcut);
                 for (int k=0; k<MAX_L_LIST; k++)
                     if (l_list[k] > 0 ){
                         r_list[r_list_id] = l_list[k];

@@ -7,24 +7,77 @@ libpath = os.path.join(basedir, 'librdf*.so')
 libpath = glob.glob(libpath)[0]
 rdf_ctypes = ctypes.CDLL(libpath)
 
-def rdf_c(r_list, cell, rcut,nbins):
-    Rpart1_c_double=(ctypes.c_double * (len(r_list)*3)) ()
-    Rpart2_c_double=(ctypes.c_double * (len(r_list)*3)) ()
+def rdf_two_types_many_steps(coord1, coord2, cell, rcut, nbins=100): 
+    '''!Radial Distribution Function between two types of particles for several steps
+    density for RDF calculate by number of 2nd particles (len(coord2[0])).
+    @param coord1,coord2 XYZ coordinates of 1,2-nd type particles, format 
+        coord[Nstep][Nparticles][Dimension]
+    @param cell Size of cubic cell
+    @param rcut Max radius of RDF
+    @param nbins Number of bins for RDF (dbins=rcut/nbins)
+
+    @return [bins, rdf]
+    '''
+    Nsteps = len(coord1)
+    Npart1 = len(coord1[0])
+    Npart2 = len(coord2[0])
+    Rpart1_c_double=(ctypes.c_double * (Nsteps*Npart1*3)) ()
+    Rpart2_c_double=(ctypes.c_double * (Nsteps*Npart2*3)) ()
     rdf_c_double = (ctypes.c_double * nbins) ()
-    for i in range(len(r_list)):
-        for j in range(3):
-            Rpart1_c_double[i*3+j]=r_list[i][j]
-            Rpart2_c_double[i*3+j]=r_list[i][j]
+    for step in range(Nsteps):
+        for idp in range(Npart1):
+            for dim in range(3):
+                Rpart1_c_double[step*Npart1*3 + idp*3 + dim]=coord1[step][idp][dim]
+
+    for step in range(Nsteps):
+        for idp in range(Npart2):
+            for dim in range(3):
+                Rpart2_c_double[step*Npart2*3 + idp*3 + dim]=coord2[step][idp][dim]
+
     rdf_ctypes.rdf.restype = ctypes.c_int
     rdf_ctypes.rdf.argtypes = [ctypes.c_int, ctypes.c_double,
                                ctypes.POINTER(ctypes.c_double),
-                               ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int,
+                               ctypes.c_int, ctypes.c_int, ctypes.c_int,
                                ctypes.POINTER(ctypes.c_double), 
                                ctypes.POINTER(ctypes.c_double), 
                                ctypes.c_double]
-    rdf_ctypes.rdf(nbins, rcut, rdf_c_double, len(r_list), len(r_list), len(r_list), 1,
+    rdf_ctypes.rdf(nbins, rcut, rdf_c_double, Npart1, Npart2, Nsteps,
                                 Rpart1_c_double,Rpart2_c_double,cell)
-    return list(rdf_c_double)
+    
+    dbins=rcut/nbins
+    bins=[dbins/2+i*dbins for i in range(nbins)]
+    return bins, list(rdf_c_double)
+
+def rdf_one_type_one_step(coord, cell, rcut,nbins):
+    '''!Radial Distribution Function between particles for one step only
+    @param coord XYZ coordinates of particles, format:
+        coord[Nparticles][Dimension]
+    @param cell Size of cubic cell
+    @param rcut Max radius of RDF
+    @param nbins Number of bins for RDF (dbins=rcut/nbins)
+
+    @return [bins, rdf]
+    '''
+    Npart=len(coord)
+    Rpart1_c_double=(ctypes.c_double * (Npart*3)) ()
+    Rpart2_c_double=(ctypes.c_double * (Npart*3)) ()
+    rdf_c_double = (ctypes.c_double * nbins) ()
+    for idp in range(Npart):
+        for dim in range(3):
+            Rpart1_c_double[idp*3+dim]=coord[idp][dim]
+            Rpart2_c_double[idp*3+dim]=coord[idp][dim]
+    rdf_ctypes.rdf.restype = ctypes.c_int
+    rdf_ctypes.rdf.argtypes = [ctypes.c_int, ctypes.c_double,
+                               ctypes.POINTER(ctypes.c_double),
+                               ctypes.c_int, ctypes.c_int, ctypes.c_int,
+                               ctypes.POINTER(ctypes.c_double), 
+                               ctypes.POINTER(ctypes.c_double), 
+                               ctypes.c_double]
+    rdf_ctypes.rdf(nbins, rcut, rdf_c_double, Npart, Npart, 1,
+                                Rpart1_c_double,Rpart2_c_double,cell)
+    dbins=rcut/nbins
+    bins=[dbins/2+i*dbins for i in range(nbins)]
+    return bins, list(rdf_c_double)
 
 def get_nearest_axes(r1,r2,cell):
     dx = r2-r1
@@ -35,7 +88,17 @@ def get_nearest_axes(r1,r2,cell):
         
     return dx
 
-def rdf_python(r_list, cell, rcut,nbins):
+def rdf_one_type_one_step_python(r_list, cell, rcut,nbins):
+    '''!Radial Distribution Function between particles for one step only
+    Python Version (SLOW) of rdf_one_type_one_step
+    @param coord XYZ coordinates of particles, format:
+        coord[Nparticles][Dimension]
+    @param cell Size of cubic cell
+    @param rcut Max radius of RDF
+    @param nbins Number of bins for RDF (dbins=rcut/nbins)
+
+    @return [bins, rdf]
+    '''
     N=len(r_list)
     rho = N/cell**3
     l_list=[]
@@ -59,4 +122,4 @@ def rdf_python(r_list, cell, rcut,nbins):
     g_r=[]
     for index in range(len(counts)):
         g_r.append(1.0*(counts[index]/( 4*3.14*(bins[index]**2)*dbins) / rho / N))
-    return g_r
+    return bins, g_r
