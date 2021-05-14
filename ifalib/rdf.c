@@ -41,17 +41,15 @@ int get_nearests(double x1, double x2, double cell, double rcut){
         dx = dx-cell;
     }
     x_list_0=x_list_id;
-    x_list[x_list_id]=fabs(dx);
-    x_list_id++;
     while (dx < rcut){
         if (x_list_id-x_list_0 >= MAX_X_LIST){
             printf ("dx: %f | ", dx);
             printf("exit -1 (dx < rcut)\n");
             exit(-1);
         }
-        dx += cell;
         x_list[x_list_id]=fabs(dx);
         x_list_id++;
+        dx += cell;
     }   
 
     dx = x_list[x_list_0]-cell;
@@ -61,9 +59,9 @@ int get_nearests(double x1, double x2, double cell, double rcut){
             printf("exit -1 (dx > -rcut)\n");
             exit(-1);
         }
-        dx -= cell;
         x_list[x_list_id]=fabs(dx);
         x_list_id++;
+        dx -= cell;
     }
     while(x_list_id-x_list_0 < MAX_X_LIST){
         x_list[x_list_id]=-1;
