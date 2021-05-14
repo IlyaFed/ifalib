@@ -14,11 +14,6 @@
 import os, glob
 import ctypes 
 
-# Load Library
-basedir = os.path.abspath(os.path.dirname(__file__))
-libpath = os.path.join(basedir, 'librdf*.so')
-libpath = glob.glob(libpath)[0]
-rdf_ctypes = ctypes.CDLL(libpath)
 
 def rdf_two_types_many_steps(coord1, coord2, cell, rcut, nbins=100): 
     '''! Radial Distribution Function between two types of particles for several steps
@@ -31,21 +26,30 @@ def rdf_two_types_many_steps(coord1, coord2, cell, rcut, nbins=100):
 
     @return [bins, rdf]
     '''
+    # Load Library
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    libpath = os.path.join(basedir, 'librdf*.so')
+    libpath = glob.glob(libpath)[0]
+    rdf_ctypes = ctypes.CDLL(libpath)
     Nsteps = len(coord1)
     Npart1 = len(coord1[0])
     Npart2 = len(coord2[0])
-    Rpart1_c_double=(ctypes.c_double * (Nsteps*Npart1*3)) ()
-    Rpart2_c_double=(ctypes.c_double * (Nsteps*Npart2*3)) ()
-    rdf_c_double = (ctypes.c_double * nbins) ()
+    Rpart1=[]
+    Rpart2=[]
     for step in range(Nsteps):
         for idp in range(Npart1):
             for dim in range(3):
-                Rpart1_c_double[step*Npart1*3 + idp*3 + dim]=coord1[step][idp][dim]
+                Rpart1.append(coord1[step][idp][dim])
 
     for step in range(Nsteps):
         for idp in range(Npart2):
             for dim in range(3):
-                Rpart2_c_double[step*Npart2*3 + idp*3 + dim]=coord2[step][idp][dim]
+                Rpart2.append(coord2[step][idp][dim])
+
+    Rpart1_c_double=(ctypes.c_double * (Nsteps*Npart1*3)) (*Rpart1)
+    Rpart2_c_double=(ctypes.c_double * (Nsteps*Npart2*3)) (*Rpart2)
+    rdf_c_double = (ctypes.c_double * nbins) ()
+    
 
     rdf_ctypes.rdf.restype = ctypes.c_int
     rdf_ctypes.rdf.argtypes = [ctypes.c_int, ctypes.c_double,
@@ -62,6 +66,11 @@ def rdf_two_types_many_steps(coord1, coord2, cell, rcut, nbins=100):
     return bins, list(rdf_c_double)
 
 def rdf_one_type_one_step(coord, cell, rcut,nbins):
+    # Load Library
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    libpath = os.path.join(basedir, 'librdf*.so')
+    libpath = glob.glob(libpath)[0]
+    rdf_ctypes = ctypes.CDLL(libpath)
     '''! Radial Distribution Function between particles for one step only
     @param coord XYZ coordinates of particles, format:
         coord[Nparticles][Dimension]
@@ -93,7 +102,7 @@ def rdf_one_type_one_step(coord, cell, rcut,nbins):
     return bins, list(rdf_c_double)
 
 def get_nearest_axes(r1,r2,cell):
-    dx = r2-r1
+    dx = abs(r2-r1)
     c = int(dx/cell)
     dx = dx - c * cell
     if abs(dx-cell) < abs(dx):
@@ -112,14 +121,14 @@ def rdf_one_type_one_step_python(coord, cell, rcut,nbins):
 
     @return [bins, rdf]
     '''
-    N=len(r_list)
+    N=len(coord)
     rho = N/cell**3
     l_list=[]
     naveraged=0
     for i in range(N):
         for j in range(N):
-            r1=r_list[i]
-            r2=r_list[j]
+            r1=coord[i]
+            r2=coord[j]
             l_r=0
             for l in range(3):
                 l_r +=get_nearest_axes(r1[l],r2[l], cell)**2

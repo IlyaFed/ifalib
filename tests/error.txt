@@ -1,0 +1,1264 @@
+before alloc
+after alloc
+before: 0, 0, 0
+before Xcoord: 0.000000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 0, xlist_id: 0, dx: 0.000000
+12: xlist_0: 0, xlist_id: 0, dx: 0.000000
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.400000
+3: xlist_0: 0, xlist_id: 2, dx: -26.400000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 0, xlist_id: 3, dx: 0.000000
+12: xlist_0: 3, xlist_id: 3, dx: 0.000000
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.400000
+3: xlist_0: 3, xlist_id: 5, dx: -26.400000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 3, xlist_id: 6, dx: 0.000000
+12: xlist_0: 6, xlist_id: 6, dx: 0.000000
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.400000
+3: xlist_0: 6, xlist_id: 8, dx: -26.400000
+45
+after nearest
+before: 0, 0, 1
+before Xcoord: -0.052800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0528000: xlist_0: 6, xlist_id: 0, dx: 0.052800
+12: xlist_0: 0, xlist_id: 0, dx: 0.052800
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.452800
+3: xlist_0: 0, xlist_id: 2, dx: -26.347200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0528000: xlist_0: 0, xlist_id: 3, dx: 0.052800
+12: xlist_0: 3, xlist_id: 3, dx: 0.052800
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.452800
+3: xlist_0: 3, xlist_id: 5, dx: -26.347200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0528000: xlist_0: 3, xlist_id: 6, dx: 0.052800
+12: xlist_0: 6, xlist_id: 6, dx: 0.052800
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.452800
+3: xlist_0: 6, xlist_id: 8, dx: -26.347200
+45
+after nearest
+before: 0, 0, 2
+before Xcoord: -0.105600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.1056000: xlist_0: 6, xlist_id: 0, dx: 0.105600
+12: xlist_0: 0, xlist_id: 0, dx: 0.105600
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.505600
+3: xlist_0: 0, xlist_id: 2, dx: -26.294400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.1056000: xlist_0: 0, xlist_id: 3, dx: 0.105600
+12: xlist_0: 3, xlist_id: 3, dx: 0.105600
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.505600
+3: xlist_0: 3, xlist_id: 5, dx: -26.294400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.1056000: xlist_0: 3, xlist_id: 6, dx: 0.105600
+12: xlist_0: 6, xlist_id: 6, dx: 0.105600
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.505600
+3: xlist_0: 6, xlist_id: 8, dx: -26.294400
+45
+after nearest
+before: 0, 0, 3
+before Xcoord: -0.158400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.1584000: xlist_0: 6, xlist_id: 0, dx: 0.158400
+12: xlist_0: 0, xlist_id: 0, dx: 0.158400
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.558400
+3: xlist_0: 0, xlist_id: 2, dx: -26.241600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.1584000: xlist_0: 0, xlist_id: 3, dx: 0.158400
+12: xlist_0: 3, xlist_id: 3, dx: 0.158400
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.558400
+3: xlist_0: 3, xlist_id: 5, dx: -26.241600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.1584000: xlist_0: 3, xlist_id: 6, dx: 0.158400
+12: xlist_0: 6, xlist_id: 6, dx: 0.158400
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.558400
+3: xlist_0: 6, xlist_id: 8, dx: -26.241600
+45
+after nearest
+before: 0, 0, 4
+before Xcoord: -0.211200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.2112000: xlist_0: 6, xlist_id: 0, dx: 0.211200
+12: xlist_0: 0, xlist_id: 0, dx: 0.211200
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.611200
+3: xlist_0: 0, xlist_id: 2, dx: -26.188800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.2112000: xlist_0: 0, xlist_id: 3, dx: 0.211200
+12: xlist_0: 3, xlist_id: 3, dx: 0.211200
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.611200
+3: xlist_0: 3, xlist_id: 5, dx: -26.188800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.2112000: xlist_0: 3, xlist_id: 6, dx: 0.211200
+12: xlist_0: 6, xlist_id: 6, dx: 0.211200
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.611200
+3: xlist_0: 6, xlist_id: 8, dx: -26.188800
+45
+after nearest
+before: 0, 0, 5
+before Xcoord: -0.264000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.2640000: xlist_0: 6, xlist_id: 0, dx: 0.264000
+12: xlist_0: 0, xlist_id: 0, dx: 0.264000
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.664000
+3: xlist_0: 0, xlist_id: 2, dx: -26.136000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.2640000: xlist_0: 0, xlist_id: 3, dx: 0.264000
+12: xlist_0: 3, xlist_id: 3, dx: 0.264000
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.664000
+3: xlist_0: 3, xlist_id: 5, dx: -26.136000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.2640000: xlist_0: 3, xlist_id: 6, dx: 0.264000
+12: xlist_0: 6, xlist_id: 6, dx: 0.264000
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.664000
+3: xlist_0: 6, xlist_id: 8, dx: -26.136000
+45
+after nearest
+before: 0, 0, 6
+before Xcoord: -0.316800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.3168000: xlist_0: 6, xlist_id: 0, dx: 0.316800
+12: xlist_0: 0, xlist_id: 0, dx: 0.316800
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.716800
+3: xlist_0: 0, xlist_id: 2, dx: -26.083200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.3168000: xlist_0: 0, xlist_id: 3, dx: 0.316800
+12: xlist_0: 3, xlist_id: 3, dx: 0.316800
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.716800
+3: xlist_0: 3, xlist_id: 5, dx: -26.083200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.3168000: xlist_0: 3, xlist_id: 6, dx: 0.316800
+12: xlist_0: 6, xlist_id: 6, dx: 0.316800
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.716800
+3: xlist_0: 6, xlist_id: 8, dx: -26.083200
+45
+after nearest
+before: 0, 0, 7
+before Xcoord: -0.369600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.3696000: xlist_0: 6, xlist_id: 0, dx: 0.369600
+12: xlist_0: 0, xlist_id: 0, dx: 0.369600
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.769600
+3: xlist_0: 0, xlist_id: 2, dx: -26.030400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.3696000: xlist_0: 0, xlist_id: 3, dx: 0.369600
+12: xlist_0: 3, xlist_id: 3, dx: 0.369600
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.769600
+3: xlist_0: 3, xlist_id: 5, dx: -26.030400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.3696000: xlist_0: 3, xlist_id: 6, dx: 0.369600
+12: xlist_0: 6, xlist_id: 6, dx: 0.369600
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.769600
+3: xlist_0: 6, xlist_id: 8, dx: -26.030400
+45
+after nearest
+before: 0, 0, 8
+before Xcoord: -0.422400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.4224000: xlist_0: 6, xlist_id: 0, dx: 0.422400
+12: xlist_0: 0, xlist_id: 0, dx: 0.422400
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.822400
+3: xlist_0: 0, xlist_id: 2, dx: -25.977600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.4224000: xlist_0: 0, xlist_id: 3, dx: 0.422400
+12: xlist_0: 3, xlist_id: 3, dx: 0.422400
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.822400
+3: xlist_0: 3, xlist_id: 5, dx: -25.977600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.4224000: xlist_0: 3, xlist_id: 6, dx: 0.422400
+12: xlist_0: 6, xlist_id: 6, dx: 0.422400
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.822400
+3: xlist_0: 6, xlist_id: 8, dx: -25.977600
+45
+after nearest
+before: 0, 0, 9
+before Xcoord: -0.475200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.4752000: xlist_0: 6, xlist_id: 0, dx: 0.475200
+12: xlist_0: 0, xlist_id: 0, dx: 0.475200
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.875200
+3: xlist_0: 0, xlist_id: 2, dx: -25.924800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.4752000: xlist_0: 0, xlist_id: 3, dx: 0.475200
+12: xlist_0: 3, xlist_id: 3, dx: 0.475200
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.875200
+3: xlist_0: 3, xlist_id: 5, dx: -25.924800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.4752000: xlist_0: 3, xlist_id: 6, dx: 0.475200
+12: xlist_0: 6, xlist_id: 6, dx: 0.475200
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.875200
+3: xlist_0: 6, xlist_id: 8, dx: -25.924800
+45
+after nearest
+before: 0, 0, 10
+before Xcoord: -0.528000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.5280000: xlist_0: 6, xlist_id: 0, dx: 0.528000
+12: xlist_0: 0, xlist_id: 0, dx: 0.528000
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.928000
+3: xlist_0: 0, xlist_id: 2, dx: -25.872000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.5280000: xlist_0: 0, xlist_id: 3, dx: 0.528000
+12: xlist_0: 3, xlist_id: 3, dx: 0.528000
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.928000
+3: xlist_0: 3, xlist_id: 5, dx: -25.872000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.5280000: xlist_0: 3, xlist_id: 6, dx: 0.528000
+12: xlist_0: 6, xlist_id: 6, dx: 0.528000
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.928000
+3: xlist_0: 6, xlist_id: 8, dx: -25.872000
+45
+after nearest
+before: 0, 0, 11
+before Xcoord: -0.580800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.5808000: xlist_0: 6, xlist_id: 0, dx: 0.580800
+12: xlist_0: 0, xlist_id: 0, dx: 0.580800
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.980800
+3: xlist_0: 0, xlist_id: 2, dx: -25.819200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.5808000: xlist_0: 0, xlist_id: 3, dx: 0.580800
+12: xlist_0: 3, xlist_id: 3, dx: 0.580800
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.980800
+3: xlist_0: 3, xlist_id: 5, dx: -25.819200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.5808000: xlist_0: 3, xlist_id: 6, dx: 0.580800
+12: xlist_0: 6, xlist_id: 6, dx: 0.580800
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.980800
+3: xlist_0: 6, xlist_id: 8, dx: -25.819200
+45
+after nearest
+before: 0, 0, 12
+before Xcoord: -0.633600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.6336000: xlist_0: 6, xlist_id: 0, dx: 0.633600
+12: xlist_0: 0, xlist_id: 0, dx: 0.633600
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.033600
+3: xlist_0: 0, xlist_id: 2, dx: -25.766400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.6336000: xlist_0: 0, xlist_id: 3, dx: 0.633600
+12: xlist_0: 3, xlist_id: 3, dx: 0.633600
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.033600
+3: xlist_0: 3, xlist_id: 5, dx: -25.766400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.6336000: xlist_0: 3, xlist_id: 6, dx: 0.633600
+12: xlist_0: 6, xlist_id: 6, dx: 0.633600
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.033600
+3: xlist_0: 6, xlist_id: 8, dx: -25.766400
+45
+after nearest
+before: 0, 0, 13
+before Xcoord: -0.686400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.6864000: xlist_0: 6, xlist_id: 0, dx: 0.686400
+12: xlist_0: 0, xlist_id: 0, dx: 0.686400
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.086400
+3: xlist_0: 0, xlist_id: 2, dx: -25.713600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.6864000: xlist_0: 0, xlist_id: 3, dx: 0.686400
+12: xlist_0: 3, xlist_id: 3, dx: 0.686400
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.086400
+3: xlist_0: 3, xlist_id: 5, dx: -25.713600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.6864000: xlist_0: 3, xlist_id: 6, dx: 0.686400
+12: xlist_0: 6, xlist_id: 6, dx: 0.686400
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.086400
+3: xlist_0: 6, xlist_id: 8, dx: -25.713600
+45
+after nearest
+before: 0, 0, 14
+before Xcoord: -0.739200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.7392000: xlist_0: 6, xlist_id: 0, dx: 0.739200
+12: xlist_0: 0, xlist_id: 0, dx: 0.739200
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.139200
+3: xlist_0: 0, xlist_id: 2, dx: -25.660800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.7392000: xlist_0: 0, xlist_id: 3, dx: 0.739200
+12: xlist_0: 3, xlist_id: 3, dx: 0.739200
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.139200
+3: xlist_0: 3, xlist_id: 5, dx: -25.660800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.7392000: xlist_0: 3, xlist_id: 6, dx: 0.739200
+12: xlist_0: 6, xlist_id: 6, dx: 0.739200
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.139200
+3: xlist_0: 6, xlist_id: 8, dx: -25.660800
+45
+after nearest
+before: 0, 0, 15
+before Xcoord: -0.792000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.7920000: xlist_0: 6, xlist_id: 0, dx: 0.792000
+12: xlist_0: 0, xlist_id: 0, dx: 0.792000
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.192000
+3: xlist_0: 0, xlist_id: 2, dx: -25.608000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.7920000: xlist_0: 0, xlist_id: 3, dx: 0.792000
+12: xlist_0: 3, xlist_id: 3, dx: 0.792000
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.192000
+3: xlist_0: 3, xlist_id: 5, dx: -25.608000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.7920000: xlist_0: 3, xlist_id: 6, dx: 0.792000
+12: xlist_0: 6, xlist_id: 6, dx: 0.792000
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.192000
+3: xlist_0: 6, xlist_id: 8, dx: -25.608000
+45
+after nearest
+before: 0, 0, 16
+before Xcoord: -0.844800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.8448000: xlist_0: 6, xlist_id: 0, dx: 0.844800
+12: xlist_0: 0, xlist_id: 0, dx: 0.844800
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.244800
+3: xlist_0: 0, xlist_id: 2, dx: -25.555200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.8448000: xlist_0: 0, xlist_id: 3, dx: 0.844800
+12: xlist_0: 3, xlist_id: 3, dx: 0.844800
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.244800
+3: xlist_0: 3, xlist_id: 5, dx: -25.555200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.8448000: xlist_0: 3, xlist_id: 6, dx: 0.844800
+12: xlist_0: 6, xlist_id: 6, dx: 0.844800
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.244800
+3: xlist_0: 6, xlist_id: 8, dx: -25.555200
+45
+after nearest
+before: 0, 0, 17
+before Xcoord: -0.897600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.8976000: xlist_0: 6, xlist_id: 0, dx: 0.897600
+12: xlist_0: 0, xlist_id: 0, dx: 0.897600
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.297600
+3: xlist_0: 0, xlist_id: 2, dx: -25.502400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.8976000: xlist_0: 0, xlist_id: 3, dx: 0.897600
+12: xlist_0: 3, xlist_id: 3, dx: 0.897600
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.297600
+3: xlist_0: 3, xlist_id: 5, dx: -25.502400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.8976000: xlist_0: 3, xlist_id: 6, dx: 0.897600
+12: xlist_0: 6, xlist_id: 6, dx: 0.897600
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.297600
+3: xlist_0: 6, xlist_id: 8, dx: -25.502400
+45
+after nearest
+before: 0, 0, 18
+before Xcoord: -0.950400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.9504000: xlist_0: 6, xlist_id: 0, dx: 0.950400
+12: xlist_0: 0, xlist_id: 0, dx: 0.950400
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.350400
+3: xlist_0: 0, xlist_id: 2, dx: -25.449600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.9504000: xlist_0: 0, xlist_id: 3, dx: 0.950400
+12: xlist_0: 3, xlist_id: 3, dx: 0.950400
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.350400
+3: xlist_0: 3, xlist_id: 5, dx: -25.449600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.9504000: xlist_0: 3, xlist_id: 6, dx: 0.950400
+12: xlist_0: 6, xlist_id: 6, dx: 0.950400
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.350400
+3: xlist_0: 6, xlist_id: 8, dx: -25.449600
+45
+after nearest
+before: 0, 0, 19
+before Xcoord: -1.003200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.0032000: xlist_0: 6, xlist_id: 0, dx: 1.003200
+12: xlist_0: 0, xlist_id: 0, dx: 1.003200
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.403200
+3: xlist_0: 0, xlist_id: 2, dx: -25.396800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.0032000: xlist_0: 0, xlist_id: 3, dx: 1.003200
+12: xlist_0: 3, xlist_id: 3, dx: 1.003200
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.403200
+3: xlist_0: 3, xlist_id: 5, dx: -25.396800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.0032000: xlist_0: 3, xlist_id: 6, dx: 1.003200
+12: xlist_0: 6, xlist_id: 6, dx: 1.003200
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.403200
+3: xlist_0: 6, xlist_id: 8, dx: -25.396800
+45
+after nearest
+before: 0, 0, 20
+before Xcoord: -1.056000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.0560000: xlist_0: 6, xlist_id: 0, dx: 1.056000
+12: xlist_0: 0, xlist_id: 0, dx: 1.056000
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.456000
+3: xlist_0: 0, xlist_id: 2, dx: -25.344000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.0560000: xlist_0: 0, xlist_id: 3, dx: 1.056000
+12: xlist_0: 3, xlist_id: 3, dx: 1.056000
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.456000
+3: xlist_0: 3, xlist_id: 5, dx: -25.344000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.0560000: xlist_0: 3, xlist_id: 6, dx: 1.056000
+12: xlist_0: 6, xlist_id: 6, dx: 1.056000
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.456000
+3: xlist_0: 6, xlist_id: 8, dx: -25.344000
+45
+after nearest
+before: 0, 0, 21
+before Xcoord: -1.108800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.1088000: xlist_0: 6, xlist_id: 0, dx: 1.108800
+12: xlist_0: 0, xlist_id: 0, dx: 1.108800
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.508800
+3: xlist_0: 0, xlist_id: 2, dx: -25.291200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.1088000: xlist_0: 0, xlist_id: 3, dx: 1.108800
+12: xlist_0: 3, xlist_id: 3, dx: 1.108800
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.508800
+3: xlist_0: 3, xlist_id: 5, dx: -25.291200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.1088000: xlist_0: 3, xlist_id: 6, dx: 1.108800
+12: xlist_0: 6, xlist_id: 6, dx: 1.108800
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.508800
+3: xlist_0: 6, xlist_id: 8, dx: -25.291200
+45
+after nearest
+before: 0, 0, 22
+before Xcoord: -1.161600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.1616000: xlist_0: 6, xlist_id: 0, dx: 1.161600
+12: xlist_0: 0, xlist_id: 0, dx: 1.161600
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.561600
+3: xlist_0: 0, xlist_id: 2, dx: -25.238400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.1616000: xlist_0: 0, xlist_id: 3, dx: 1.161600
+12: xlist_0: 3, xlist_id: 3, dx: 1.161600
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.561600
+3: xlist_0: 3, xlist_id: 5, dx: -25.238400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.1616000: xlist_0: 3, xlist_id: 6, dx: 1.161600
+12: xlist_0: 6, xlist_id: 6, dx: 1.161600
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.561600
+3: xlist_0: 6, xlist_id: 8, dx: -25.238400
+45
+after nearest
+before: 0, 0, 23
+before Xcoord: -1.214400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.2144000: xlist_0: 6, xlist_id: 0, dx: 1.214400
+12: xlist_0: 0, xlist_id: 0, dx: 1.214400
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.614400
+3: xlist_0: 0, xlist_id: 2, dx: -25.185600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.2144000: xlist_0: 0, xlist_id: 3, dx: 1.214400
+12: xlist_0: 3, xlist_id: 3, dx: 1.214400
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.614400
+3: xlist_0: 3, xlist_id: 5, dx: -25.185600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.2144000: xlist_0: 3, xlist_id: 6, dx: 1.214400
+12: xlist_0: 6, xlist_id: 6, dx: 1.214400
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.614400
+3: xlist_0: 6, xlist_id: 8, dx: -25.185600
+45
+after nearest
+before: 0, 0, 24
+before Xcoord: -1.267200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.2672000: xlist_0: 6, xlist_id: 0, dx: 1.267200
+12: xlist_0: 0, xlist_id: 0, dx: 1.267200
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.667200
+3: xlist_0: 0, xlist_id: 2, dx: -25.132800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.2672000: xlist_0: 0, xlist_id: 3, dx: 1.267200
+12: xlist_0: 3, xlist_id: 3, dx: 1.267200
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.667200
+3: xlist_0: 3, xlist_id: 5, dx: -25.132800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.2672000: xlist_0: 3, xlist_id: 6, dx: 1.267200
+12: xlist_0: 6, xlist_id: 6, dx: 1.267200
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.667200
+3: xlist_0: 6, xlist_id: 8, dx: -25.132800
+45
+after nearest
+before: 0, 0, 25
+before Xcoord: -1.320000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.3200000: xlist_0: 6, xlist_id: 0, dx: 1.320000
+12: xlist_0: 0, xlist_id: 0, dx: 1.320000
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.720000
+3: xlist_0: 0, xlist_id: 2, dx: -25.080000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.3200000: xlist_0: 0, xlist_id: 3, dx: 1.320000
+12: xlist_0: 3, xlist_id: 3, dx: 1.320000
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.720000
+3: xlist_0: 3, xlist_id: 5, dx: -25.080000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.3200000: xlist_0: 3, xlist_id: 6, dx: 1.320000
+12: xlist_0: 6, xlist_id: 6, dx: 1.320000
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.720000
+3: xlist_0: 6, xlist_id: 8, dx: -25.080000
+45
+after nearest
+before: 0, 0, 26
+before Xcoord: -1.372800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.3728000: xlist_0: 6, xlist_id: 0, dx: 1.372800
+12: xlist_0: 0, xlist_id: 0, dx: 1.372800
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.772800
+3: xlist_0: 0, xlist_id: 2, dx: -25.027200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.3728000: xlist_0: 0, xlist_id: 3, dx: 1.372800
+12: xlist_0: 3, xlist_id: 3, dx: 1.372800
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.772800
+3: xlist_0: 3, xlist_id: 5, dx: -25.027200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.3728000: xlist_0: 3, xlist_id: 6, dx: 1.372800
+12: xlist_0: 6, xlist_id: 6, dx: 1.372800
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.772800
+3: xlist_0: 6, xlist_id: 8, dx: -25.027200
+45
+after nearest
+before: 0, 0, 27
+before Xcoord: -1.425600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.4256000: xlist_0: 6, xlist_id: 0, dx: 1.425600
+12: xlist_0: 0, xlist_id: 0, dx: 1.425600
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.825600
+3: xlist_0: 0, xlist_id: 2, dx: -24.974400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.4256000: xlist_0: 0, xlist_id: 3, dx: 1.425600
+12: xlist_0: 3, xlist_id: 3, dx: 1.425600
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.825600
+3: xlist_0: 3, xlist_id: 5, dx: -24.974400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.4256000: xlist_0: 3, xlist_id: 6, dx: 1.425600
+12: xlist_0: 6, xlist_id: 6, dx: 1.425600
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.825600
+3: xlist_0: 6, xlist_id: 8, dx: -24.974400
+45
+after nearest
+before: 0, 0, 28
+before Xcoord: -1.478400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.4784000: xlist_0: 6, xlist_id: 0, dx: 1.478400
+12: xlist_0: 0, xlist_id: 0, dx: 1.478400
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.878400
+3: xlist_0: 0, xlist_id: 2, dx: -24.921600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.4784000: xlist_0: 0, xlist_id: 3, dx: 1.478400
+12: xlist_0: 3, xlist_id: 3, dx: 1.478400
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.878400
+3: xlist_0: 3, xlist_id: 5, dx: -24.921600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.4784000: xlist_0: 3, xlist_id: 6, dx: 1.478400
+12: xlist_0: 6, xlist_id: 6, dx: 1.478400
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.878400
+3: xlist_0: 6, xlist_id: 8, dx: -24.921600
+45
+after nearest
+before: 0, 0, 29
+before Xcoord: -1.531200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.5312000: xlist_0: 6, xlist_id: 0, dx: 1.531200
+12: xlist_0: 0, xlist_id: 0, dx: 1.531200
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.931200
+3: xlist_0: 0, xlist_id: 2, dx: -24.868800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.5312000: xlist_0: 0, xlist_id: 3, dx: 1.531200
+12: xlist_0: 3, xlist_id: 3, dx: 1.531200
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.931200
+3: xlist_0: 3, xlist_id: 5, dx: -24.868800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.5312000: xlist_0: 3, xlist_id: 6, dx: 1.531200
+12: xlist_0: 6, xlist_id: 6, dx: 1.531200
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.931200
+3: xlist_0: 6, xlist_id: 8, dx: -24.868800
+45
+after nearest
+before: 0, 0, 30
+before Xcoord: -1.584000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.5840000: xlist_0: 6, xlist_id: 0, dx: 1.584000
+12: xlist_0: 0, xlist_id: 0, dx: 1.584000
+2.5: xlist_0: 0, xlist_id: 2, dx: 27.984000
+3: xlist_0: 0, xlist_id: 2, dx: -24.816000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.5840000: xlist_0: 0, xlist_id: 3, dx: 1.584000
+12: xlist_0: 3, xlist_id: 3, dx: 1.584000
+2.5: xlist_0: 3, xlist_id: 5, dx: 27.984000
+3: xlist_0: 3, xlist_id: 5, dx: -24.816000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.5840000: xlist_0: 3, xlist_id: 6, dx: 1.584000
+12: xlist_0: 6, xlist_id: 6, dx: 1.584000
+2.5: xlist_0: 6, xlist_id: 8, dx: 27.984000
+3: xlist_0: 6, xlist_id: 8, dx: -24.816000
+45
+after nearest
+before: 0, 0, 31
+before Xcoord: -1.636800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.6368000: xlist_0: 6, xlist_id: 0, dx: 1.636800
+12: xlist_0: 0, xlist_id: 0, dx: 1.636800
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.036800
+3: xlist_0: 0, xlist_id: 2, dx: -24.763200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.6368000: xlist_0: 0, xlist_id: 3, dx: 1.636800
+12: xlist_0: 3, xlist_id: 3, dx: 1.636800
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.036800
+3: xlist_0: 3, xlist_id: 5, dx: -24.763200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.6368000: xlist_0: 3, xlist_id: 6, dx: 1.636800
+12: xlist_0: 6, xlist_id: 6, dx: 1.636800
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.036800
+3: xlist_0: 6, xlist_id: 8, dx: -24.763200
+45
+after nearest
+before: 0, 0, 32
+before Xcoord: -1.689600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.6896000: xlist_0: 6, xlist_id: 0, dx: 1.689600
+12: xlist_0: 0, xlist_id: 0, dx: 1.689600
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.089600
+3: xlist_0: 0, xlist_id: 2, dx: -24.710400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.6896000: xlist_0: 0, xlist_id: 3, dx: 1.689600
+12: xlist_0: 3, xlist_id: 3, dx: 1.689600
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.089600
+3: xlist_0: 3, xlist_id: 5, dx: -24.710400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.6896000: xlist_0: 3, xlist_id: 6, dx: 1.689600
+12: xlist_0: 6, xlist_id: 6, dx: 1.689600
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.089600
+3: xlist_0: 6, xlist_id: 8, dx: -24.710400
+45
+after nearest
+before: 0, 0, 33
+before Xcoord: -1.742400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.7424000: xlist_0: 6, xlist_id: 0, dx: 1.742400
+12: xlist_0: 0, xlist_id: 0, dx: 1.742400
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.142400
+3: xlist_0: 0, xlist_id: 2, dx: -24.657600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.7424000: xlist_0: 0, xlist_id: 3, dx: 1.742400
+12: xlist_0: 3, xlist_id: 3, dx: 1.742400
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.142400
+3: xlist_0: 3, xlist_id: 5, dx: -24.657600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.7424000: xlist_0: 3, xlist_id: 6, dx: 1.742400
+12: xlist_0: 6, xlist_id: 6, dx: 1.742400
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.142400
+3: xlist_0: 6, xlist_id: 8, dx: -24.657600
+45
+after nearest
+before: 0, 0, 34
+before Xcoord: -1.795200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.7952000: xlist_0: 6, xlist_id: 0, dx: 1.795200
+12: xlist_0: 0, xlist_id: 0, dx: 1.795200
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.195200
+3: xlist_0: 0, xlist_id: 2, dx: -24.604800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.7952000: xlist_0: 0, xlist_id: 3, dx: 1.795200
+12: xlist_0: 3, xlist_id: 3, dx: 1.795200
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.195200
+3: xlist_0: 3, xlist_id: 5, dx: -24.604800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.7952000: xlist_0: 3, xlist_id: 6, dx: 1.795200
+12: xlist_0: 6, xlist_id: 6, dx: 1.795200
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.195200
+3: xlist_0: 6, xlist_id: 8, dx: -24.604800
+45
+after nearest
+before: 0, 0, 35
+before Xcoord: -1.848000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.8480000: xlist_0: 6, xlist_id: 0, dx: 1.848000
+12: xlist_0: 0, xlist_id: 0, dx: 1.848000
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.248000
+3: xlist_0: 0, xlist_id: 2, dx: -24.552000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.8480000: xlist_0: 0, xlist_id: 3, dx: 1.848000
+12: xlist_0: 3, xlist_id: 3, dx: 1.848000
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.248000
+3: xlist_0: 3, xlist_id: 5, dx: -24.552000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.8480000: xlist_0: 3, xlist_id: 6, dx: 1.848000
+12: xlist_0: 6, xlist_id: 6, dx: 1.848000
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.248000
+3: xlist_0: 6, xlist_id: 8, dx: -24.552000
+45
+after nearest
+before: 0, 0, 36
+before Xcoord: -1.900800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.9008000: xlist_0: 6, xlist_id: 0, dx: 1.900800
+12: xlist_0: 0, xlist_id: 0, dx: 1.900800
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.300800
+3: xlist_0: 0, xlist_id: 2, dx: -24.499200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.9008000: xlist_0: 0, xlist_id: 3, dx: 1.900800
+12: xlist_0: 3, xlist_id: 3, dx: 1.900800
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.300800
+3: xlist_0: 3, xlist_id: 5, dx: -24.499200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.9008000: xlist_0: 3, xlist_id: 6, dx: 1.900800
+12: xlist_0: 6, xlist_id: 6, dx: 1.900800
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.300800
+3: xlist_0: 6, xlist_id: 8, dx: -24.499200
+45
+after nearest
+before: 0, 0, 37
+before Xcoord: -1.953600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.9536000: xlist_0: 6, xlist_id: 0, dx: 1.953600
+12: xlist_0: 0, xlist_id: 0, dx: 1.953600
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.353600
+3: xlist_0: 0, xlist_id: 2, dx: -24.446400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.9536000: xlist_0: 0, xlist_id: 3, dx: 1.953600
+12: xlist_0: 3, xlist_id: 3, dx: 1.953600
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.353600
+3: xlist_0: 3, xlist_id: 5, dx: -24.446400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 1.9536000: xlist_0: 3, xlist_id: 6, dx: 1.953600
+12: xlist_0: 6, xlist_id: 6, dx: 1.953600
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.353600
+3: xlist_0: 6, xlist_id: 8, dx: -24.446400
+45
+after nearest
+before: 0, 0, 38
+before Xcoord: -2.006400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.0064000: xlist_0: 6, xlist_id: 0, dx: 2.006400
+12: xlist_0: 0, xlist_id: 0, dx: 2.006400
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.406400
+3: xlist_0: 0, xlist_id: 2, dx: -24.393600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.0064000: xlist_0: 0, xlist_id: 3, dx: 2.006400
+12: xlist_0: 3, xlist_id: 3, dx: 2.006400
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.406400
+3: xlist_0: 3, xlist_id: 5, dx: -24.393600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.0064000: xlist_0: 3, xlist_id: 6, dx: 2.006400
+12: xlist_0: 6, xlist_id: 6, dx: 2.006400
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.406400
+3: xlist_0: 6, xlist_id: 8, dx: -24.393600
+45
+after nearest
+before: 0, 0, 39
+before Xcoord: -2.059200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.0592000: xlist_0: 6, xlist_id: 0, dx: 2.059200
+12: xlist_0: 0, xlist_id: 0, dx: 2.059200
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.459200
+3: xlist_0: 0, xlist_id: 2, dx: -24.340800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.0592000: xlist_0: 0, xlist_id: 3, dx: 2.059200
+12: xlist_0: 3, xlist_id: 3, dx: 2.059200
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.459200
+3: xlist_0: 3, xlist_id: 5, dx: -24.340800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.0592000: xlist_0: 3, xlist_id: 6, dx: 2.059200
+12: xlist_0: 6, xlist_id: 6, dx: 2.059200
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.459200
+3: xlist_0: 6, xlist_id: 8, dx: -24.340800
+45
+after nearest
+before: 0, 0, 40
+before Xcoord: -2.112000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.1120000: xlist_0: 6, xlist_id: 0, dx: 2.112000
+12: xlist_0: 0, xlist_id: 0, dx: 2.112000
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.512000
+3: xlist_0: 0, xlist_id: 2, dx: -24.288000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.1120000: xlist_0: 0, xlist_id: 3, dx: 2.112000
+12: xlist_0: 3, xlist_id: 3, dx: 2.112000
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.512000
+3: xlist_0: 3, xlist_id: 5, dx: -24.288000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.1120000: xlist_0: 3, xlist_id: 6, dx: 2.112000
+12: xlist_0: 6, xlist_id: 6, dx: 2.112000
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.512000
+3: xlist_0: 6, xlist_id: 8, dx: -24.288000
+45
+after nearest
+before: 0, 0, 41
+before Xcoord: -2.164800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.1648000: xlist_0: 6, xlist_id: 0, dx: 2.164800
+12: xlist_0: 0, xlist_id: 0, dx: 2.164800
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.564800
+3: xlist_0: 0, xlist_id: 2, dx: -24.235200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.1648000: xlist_0: 0, xlist_id: 3, dx: 2.164800
+12: xlist_0: 3, xlist_id: 3, dx: 2.164800
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.564800
+3: xlist_0: 3, xlist_id: 5, dx: -24.235200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.1648000: xlist_0: 3, xlist_id: 6, dx: 2.164800
+12: xlist_0: 6, xlist_id: 6, dx: 2.164800
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.564800
+3: xlist_0: 6, xlist_id: 8, dx: -24.235200
+45
+after nearest
+before: 0, 0, 42
+before Xcoord: -2.217600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.2176000: xlist_0: 6, xlist_id: 0, dx: 2.217600
+12: xlist_0: 0, xlist_id: 0, dx: 2.217600
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.617600
+3: xlist_0: 0, xlist_id: 2, dx: -24.182400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.2176000: xlist_0: 0, xlist_id: 3, dx: 2.217600
+12: xlist_0: 3, xlist_id: 3, dx: 2.217600
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.617600
+3: xlist_0: 3, xlist_id: 5, dx: -24.182400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.2176000: xlist_0: 3, xlist_id: 6, dx: 2.217600
+12: xlist_0: 6, xlist_id: 6, dx: 2.217600
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.617600
+3: xlist_0: 6, xlist_id: 8, dx: -24.182400
+45
+after nearest
+before: 0, 0, 43
+before Xcoord: -2.270400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.2704000: xlist_0: 6, xlist_id: 0, dx: 2.270400
+12: xlist_0: 0, xlist_id: 0, dx: 2.270400
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.670400
+3: xlist_0: 0, xlist_id: 2, dx: -24.129600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.2704000: xlist_0: 0, xlist_id: 3, dx: 2.270400
+12: xlist_0: 3, xlist_id: 3, dx: 2.270400
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.670400
+3: xlist_0: 3, xlist_id: 5, dx: -24.129600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.2704000: xlist_0: 3, xlist_id: 6, dx: 2.270400
+12: xlist_0: 6, xlist_id: 6, dx: 2.270400
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.670400
+3: xlist_0: 6, xlist_id: 8, dx: -24.129600
+45
+after nearest
+before: 0, 0, 44
+before Xcoord: -2.323200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.3232000: xlist_0: 6, xlist_id: 0, dx: 2.323200
+12: xlist_0: 0, xlist_id: 0, dx: 2.323200
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.723200
+3: xlist_0: 0, xlist_id: 2, dx: -24.076800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.3232000: xlist_0: 0, xlist_id: 3, dx: 2.323200
+12: xlist_0: 3, xlist_id: 3, dx: 2.323200
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.723200
+3: xlist_0: 3, xlist_id: 5, dx: -24.076800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.3232000: xlist_0: 3, xlist_id: 6, dx: 2.323200
+12: xlist_0: 6, xlist_id: 6, dx: 2.323200
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.723200
+3: xlist_0: 6, xlist_id: 8, dx: -24.076800
+45
+after nearest
+before: 0, 0, 45
+before Xcoord: -2.376000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.3760000: xlist_0: 6, xlist_id: 0, dx: 2.376000
+12: xlist_0: 0, xlist_id: 0, dx: 2.376000
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.776000
+3: xlist_0: 0, xlist_id: 2, dx: -24.024000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.3760000: xlist_0: 0, xlist_id: 3, dx: 2.376000
+12: xlist_0: 3, xlist_id: 3, dx: 2.376000
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.776000
+3: xlist_0: 3, xlist_id: 5, dx: -24.024000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.3760000: xlist_0: 3, xlist_id: 6, dx: 2.376000
+12: xlist_0: 6, xlist_id: 6, dx: 2.376000
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.776000
+3: xlist_0: 6, xlist_id: 8, dx: -24.024000
+45
+after nearest
+before: 0, 0, 46
+before Xcoord: -2.428800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.4288000: xlist_0: 6, xlist_id: 0, dx: 2.428800
+12: xlist_0: 0, xlist_id: 0, dx: 2.428800
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.828800
+3: xlist_0: 0, xlist_id: 2, dx: -23.971200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.4288000: xlist_0: 0, xlist_id: 3, dx: 2.428800
+12: xlist_0: 3, xlist_id: 3, dx: 2.428800
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.828800
+3: xlist_0: 3, xlist_id: 5, dx: -23.971200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.4288000: xlist_0: 3, xlist_id: 6, dx: 2.428800
+12: xlist_0: 6, xlist_id: 6, dx: 2.428800
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.828800
+3: xlist_0: 6, xlist_id: 8, dx: -23.971200
+45
+after nearest
+before: 0, 0, 47
+before Xcoord: -2.481600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.4816000: xlist_0: 6, xlist_id: 0, dx: 2.481600
+12: xlist_0: 0, xlist_id: 0, dx: 2.481600
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.881600
+3: xlist_0: 0, xlist_id: 2, dx: -23.918400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.4816000: xlist_0: 0, xlist_id: 3, dx: 2.481600
+12: xlist_0: 3, xlist_id: 3, dx: 2.481600
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.881600
+3: xlist_0: 3, xlist_id: 5, dx: -23.918400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.4816000: xlist_0: 3, xlist_id: 6, dx: 2.481600
+12: xlist_0: 6, xlist_id: 6, dx: 2.481600
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.881600
+3: xlist_0: 6, xlist_id: 8, dx: -23.918400
+45
+after nearest
+before: 0, 0, 48
+before Xcoord: -2.534400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.5344000: xlist_0: 6, xlist_id: 0, dx: 2.534400
+12: xlist_0: 0, xlist_id: 0, dx: 2.534400
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.934400
+3: xlist_0: 0, xlist_id: 2, dx: -23.865600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.5344000: xlist_0: 0, xlist_id: 3, dx: 2.534400
+12: xlist_0: 3, xlist_id: 3, dx: 2.534400
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.934400
+3: xlist_0: 3, xlist_id: 5, dx: -23.865600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.5344000: xlist_0: 3, xlist_id: 6, dx: 2.534400
+12: xlist_0: 6, xlist_id: 6, dx: 2.534400
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.934400
+3: xlist_0: 6, xlist_id: 8, dx: -23.865600
+45
+after nearest
+before: 0, 0, 49
+before Xcoord: -2.587200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.5872000: xlist_0: 6, xlist_id: 0, dx: 2.587200
+12: xlist_0: 0, xlist_id: 0, dx: 2.587200
+2.5: xlist_0: 0, xlist_id: 2, dx: 28.987200
+3: xlist_0: 0, xlist_id: 2, dx: -23.812800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.5872000: xlist_0: 0, xlist_id: 3, dx: 2.587200
+12: xlist_0: 3, xlist_id: 3, dx: 2.587200
+2.5: xlist_0: 3, xlist_id: 5, dx: 28.987200
+3: xlist_0: 3, xlist_id: 5, dx: -23.812800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.5872000: xlist_0: 3, xlist_id: 6, dx: 2.587200
+12: xlist_0: 6, xlist_id: 6, dx: 2.587200
+2.5: xlist_0: 6, xlist_id: 8, dx: 28.987200
+3: xlist_0: 6, xlist_id: 8, dx: -23.812800
+45
+after nearest
+before: 0, 0, 50
+before Xcoord: -2.640000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.6400000: xlist_0: 6, xlist_id: 0, dx: 2.640000
+12: xlist_0: 0, xlist_id: 0, dx: 2.640000
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.040000
+3: xlist_0: 0, xlist_id: 2, dx: -23.760000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.6400000: xlist_0: 0, xlist_id: 3, dx: 2.640000
+12: xlist_0: 3, xlist_id: 3, dx: 2.640000
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.040000
+3: xlist_0: 3, xlist_id: 5, dx: -23.760000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.6400000: xlist_0: 3, xlist_id: 6, dx: 2.640000
+12: xlist_0: 6, xlist_id: 6, dx: 2.640000
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.040000
+3: xlist_0: 6, xlist_id: 8, dx: -23.760000
+45
+after nearest
+before: 0, 0, 51
+before Xcoord: -2.692800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.6928000: xlist_0: 6, xlist_id: 0, dx: 2.692800
+12: xlist_0: 0, xlist_id: 0, dx: 2.692800
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.092800
+3: xlist_0: 0, xlist_id: 2, dx: -23.707200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.6928000: xlist_0: 0, xlist_id: 3, dx: 2.692800
+12: xlist_0: 3, xlist_id: 3, dx: 2.692800
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.092800
+3: xlist_0: 3, xlist_id: 5, dx: -23.707200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.6928000: xlist_0: 3, xlist_id: 6, dx: 2.692800
+12: xlist_0: 6, xlist_id: 6, dx: 2.692800
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.092800
+3: xlist_0: 6, xlist_id: 8, dx: -23.707200
+45
+after nearest
+before: 0, 0, 52
+before Xcoord: -2.745600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.7456000: xlist_0: 6, xlist_id: 0, dx: 2.745600
+12: xlist_0: 0, xlist_id: 0, dx: 2.745600
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.145600
+3: xlist_0: 0, xlist_id: 2, dx: -23.654400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.7456000: xlist_0: 0, xlist_id: 3, dx: 2.745600
+12: xlist_0: 3, xlist_id: 3, dx: 2.745600
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.145600
+3: xlist_0: 3, xlist_id: 5, dx: -23.654400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.7456000: xlist_0: 3, xlist_id: 6, dx: 2.745600
+12: xlist_0: 6, xlist_id: 6, dx: 2.745600
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.145600
+3: xlist_0: 6, xlist_id: 8, dx: -23.654400
+45
+after nearest
+before: 0, 0, 53
+before Xcoord: -2.798400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.7984000: xlist_0: 6, xlist_id: 0, dx: 2.798400
+12: xlist_0: 0, xlist_id: 0, dx: 2.798400
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.198400
+3: xlist_0: 0, xlist_id: 2, dx: -23.601600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.7984000: xlist_0: 0, xlist_id: 3, dx: 2.798400
+12: xlist_0: 3, xlist_id: 3, dx: 2.798400
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.198400
+3: xlist_0: 3, xlist_id: 5, dx: -23.601600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.7984000: xlist_0: 3, xlist_id: 6, dx: 2.798400
+12: xlist_0: 6, xlist_id: 6, dx: 2.798400
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.198400
+3: xlist_0: 6, xlist_id: 8, dx: -23.601600
+45
+after nearest
+before: 0, 0, 54
+before Xcoord: -2.851200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.8512000: xlist_0: 6, xlist_id: 0, dx: 2.851200
+12: xlist_0: 0, xlist_id: 0, dx: 2.851200
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.251200
+3: xlist_0: 0, xlist_id: 2, dx: -23.548800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.8512000: xlist_0: 0, xlist_id: 3, dx: 2.851200
+12: xlist_0: 3, xlist_id: 3, dx: 2.851200
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.251200
+3: xlist_0: 3, xlist_id: 5, dx: -23.548800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.8512000: xlist_0: 3, xlist_id: 6, dx: 2.851200
+12: xlist_0: 6, xlist_id: 6, dx: 2.851200
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.251200
+3: xlist_0: 6, xlist_id: 8, dx: -23.548800
+45
+after nearest
+before: 0, 0, 55
+before Xcoord: -2.904000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.9040000: xlist_0: 6, xlist_id: 0, dx: 2.904000
+12: xlist_0: 0, xlist_id: 0, dx: 2.904000
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.304000
+3: xlist_0: 0, xlist_id: 2, dx: -23.496000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.9040000: xlist_0: 0, xlist_id: 3, dx: 2.904000
+12: xlist_0: 3, xlist_id: 3, dx: 2.904000
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.304000
+3: xlist_0: 3, xlist_id: 5, dx: -23.496000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.9040000: xlist_0: 3, xlist_id: 6, dx: 2.904000
+12: xlist_0: 6, xlist_id: 6, dx: 2.904000
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.304000
+3: xlist_0: 6, xlist_id: 8, dx: -23.496000
+45
+after nearest
+before: 0, 0, 56
+before Xcoord: -2.956800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.9568000: xlist_0: 6, xlist_id: 0, dx: 2.956800
+12: xlist_0: 0, xlist_id: 0, dx: 2.956800
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.356800
+3: xlist_0: 0, xlist_id: 2, dx: -23.443200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.9568000: xlist_0: 0, xlist_id: 3, dx: 2.956800
+12: xlist_0: 3, xlist_id: 3, dx: 2.956800
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.356800
+3: xlist_0: 3, xlist_id: 5, dx: -23.443200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 2.9568000: xlist_0: 3, xlist_id: 6, dx: 2.956800
+12: xlist_0: 6, xlist_id: 6, dx: 2.956800
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.356800
+3: xlist_0: 6, xlist_id: 8, dx: -23.443200
+45
+after nearest
+before: 0, 0, 57
+before Xcoord: -3.009600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.0096000: xlist_0: 6, xlist_id: 0, dx: 3.009600
+12: xlist_0: 0, xlist_id: 0, dx: 3.009600
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.409600
+3: xlist_0: 0, xlist_id: 2, dx: -23.390400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.0096000: xlist_0: 0, xlist_id: 3, dx: 3.009600
+12: xlist_0: 3, xlist_id: 3, dx: 3.009600
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.409600
+3: xlist_0: 3, xlist_id: 5, dx: -23.390400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.0096000: xlist_0: 3, xlist_id: 6, dx: 3.009600
+12: xlist_0: 6, xlist_id: 6, dx: 3.009600
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.409600
+3: xlist_0: 6, xlist_id: 8, dx: -23.390400
+45
+after nearest
+before: 0, 0, 58
+before Xcoord: -3.062400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.0624000: xlist_0: 6, xlist_id: 0, dx: 3.062400
+12: xlist_0: 0, xlist_id: 0, dx: 3.062400
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.462400
+3: xlist_0: 0, xlist_id: 2, dx: -23.337600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.0624000: xlist_0: 0, xlist_id: 3, dx: 3.062400
+12: xlist_0: 3, xlist_id: 3, dx: 3.062400
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.462400
+3: xlist_0: 3, xlist_id: 5, dx: -23.337600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.0624000: xlist_0: 3, xlist_id: 6, dx: 3.062400
+12: xlist_0: 6, xlist_id: 6, dx: 3.062400
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.462400
+3: xlist_0: 6, xlist_id: 8, dx: -23.337600
+45
+after nearest
+before: 0, 0, 59
+before Xcoord: -3.115200
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.1152000: xlist_0: 6, xlist_id: 0, dx: 3.115200
+12: xlist_0: 0, xlist_id: 0, dx: 3.115200
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.515200
+3: xlist_0: 0, xlist_id: 2, dx: -23.284800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.1152000: xlist_0: 0, xlist_id: 3, dx: 3.115200
+12: xlist_0: 3, xlist_id: 3, dx: 3.115200
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.515200
+3: xlist_0: 3, xlist_id: 5, dx: -23.284800
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.1152000: xlist_0: 3, xlist_id: 6, dx: 3.115200
+12: xlist_0: 6, xlist_id: 6, dx: 3.115200
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.515200
+3: xlist_0: 6, xlist_id: 8, dx: -23.284800
+45
+after nearest
+before: 0, 0, 60
+before Xcoord: -3.168000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.1680000: xlist_0: 6, xlist_id: 0, dx: 3.168000
+12: xlist_0: 0, xlist_id: 0, dx: 3.168000
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.568000
+3: xlist_0: 0, xlist_id: 2, dx: -23.232000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.1680000: xlist_0: 0, xlist_id: 3, dx: 3.168000
+12: xlist_0: 3, xlist_id: 3, dx: 3.168000
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.568000
+3: xlist_0: 3, xlist_id: 5, dx: -23.232000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.1680000: xlist_0: 3, xlist_id: 6, dx: 3.168000
+12: xlist_0: 6, xlist_id: 6, dx: 3.168000
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.568000
+3: xlist_0: 6, xlist_id: 8, dx: -23.232000
+45
+after nearest
+before: 0, 0, 61
+before Xcoord: -3.220800
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.2208000: xlist_0: 6, xlist_id: 0, dx: 3.220800
+12: xlist_0: 0, xlist_id: 0, dx: 3.220800
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.620800
+3: xlist_0: 0, xlist_id: 2, dx: -23.179200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.2208000: xlist_0: 0, xlist_id: 3, dx: 3.220800
+12: xlist_0: 3, xlist_id: 3, dx: 3.220800
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.620800
+3: xlist_0: 3, xlist_id: 5, dx: -23.179200
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.2208000: xlist_0: 3, xlist_id: 6, dx: 3.220800
+12: xlist_0: 6, xlist_id: 6, dx: 3.220800
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.620800
+3: xlist_0: 6, xlist_id: 8, dx: -23.179200
+45
+after nearest
+before: 0, 0, 62
+before Xcoord: -3.273600
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.2736000: xlist_0: 6, xlist_id: 0, dx: 3.273600
+12: xlist_0: 0, xlist_id: 0, dx: 3.273600
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.673600
+3: xlist_0: 0, xlist_id: 2, dx: -23.126400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.2736000: xlist_0: 0, xlist_id: 3, dx: 3.273600
+12: xlist_0: 3, xlist_id: 3, dx: 3.273600
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.673600
+3: xlist_0: 3, xlist_id: 5, dx: -23.126400
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.2736000: xlist_0: 3, xlist_id: 6, dx: 3.273600
+12: xlist_0: 6, xlist_id: 6, dx: 3.273600
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.673600
+3: xlist_0: 6, xlist_id: 8, dx: -23.126400
+45
+after nearest
+before: 0, 0, 63
+before Xcoord: -3.326400
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.3264000: xlist_0: 6, xlist_id: 0, dx: 3.326400
+12: xlist_0: 0, xlist_id: 0, dx: 3.326400
+2.5: xlist_0: 0, xlist_id: 2, dx: 29.726400
+3: xlist_0: 0, xlist_id: 2, dx: -23.073600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.3264000: xlist_0: 0, xlist_id: 3, dx: 3.326400
+12: xlist_0: 3, xlist_id: 3, dx: 3.326400
+2.5: xlist_0: 3, xlist_id: 5, dx: 29.726400
+3: xlist_0: 3, xlist_id: 5, dx: -23.073600
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 3.3264000: xlist_0: 3, xlist_id: 6, dx: 3.326400
+12: xlist_0: 6, xlist_id: 6, dx: 3.326400
+2.5: xlist_0: 6, xlist_id: 8, dx: 29.726400
+3: xlist_0: 6, xlist_id: 8, dx: -23.073600
+45
+after nearest
+before: 0, 0, 64
+before Xcoord: -0.000000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 6, xlist_id: 0, dx: 0.000000
+12: xlist_0: 0, xlist_id: 0, dx: 0.000000
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.400000
+3: xlist_0: 0, xlist_id: 2, dx: -26.400000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 0, xlist_id: 3, dx: 0.000000
+12: xlist_0: 3, xlist_id: 3, dx: 0.000000
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.400000
+3: xlist_0: 3, xlist_id: 5, dx: -26.400000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 3, xlist_id: 6, dx: 0.000000
+12: xlist_0: 6, xlist_id: 6, dx: 0.000000
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.400000
+3: xlist_0: 6, xlist_id: 8, dx: -26.400000
+45
+after nearest
+before: 0, 0, 65
+before Xcoord: -0.000000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 6, xlist_id: 0, dx: 0.000000
+12: xlist_0: 0, xlist_id: 0, dx: 0.000000
+2.5: xlist_0: 0, xlist_id: 2, dx: 26.400000
+3: xlist_0: 0, xlist_id: 2, dx: -26.400000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 0, xlist_id: 3, dx: 0.000000
+12: xlist_0: 3, xlist_id: 3, dx: 0.000000
+2.5: xlist_0: 3, xlist_id: 5, dx: 26.400000
+3: xlist_0: 3, xlist_id: 5, dx: -26.400000
+45
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 0.0000000: xlist_0: 3, xlist_id: 6, dx: 0.000000
+12: xlist_0: 6, xlist_id: 6, dx: 0.000000
+2.5: xlist_0: 6, xlist_id: 8, dx: 26.400000
+3: xlist_0: 6, xlist_id: 8, dx: -26.400000
+45
+after nearest
+before: 0, 0, 66
+before Xcoord: -68099359957378936860240913941927804556621730286490082549671318816460190005027727158982476105672519153156995791696935134246421248726697195840916845922728866354004298400224686646212202214400711232323584.000000
+before nearest
+x1: 0.000000, x2: 0.000000x1: 0.000000, x2: 68099359957378936860240913941927804556621730286490082549671318816460190005027727158982476105672519153156995791696935134246421248726697195840916845922728866354004298400224686646212202214400711232323584.0000000: xlist_0: 6, xlist_id: 0, dx: 68099359957378936860240913941927804556621730286490082549671318816460190005027727158982476105672519153156995791696935134246421248726697195840916845922728866354004298400224686646212202214400711232323584.000000
+12: xlist_0: 0, xlist_id: 0, dx: 68099359957378936860240913941927804556621730286490082549671318816460190005027727158982476105672519153156995791696935134246421248726697195840916845922728866354004298400224686646212202214400711232323584.000000
+2.5: xlist_0: 0, xlist_id: 1, dx: 68099359957378936860240913941927804556621730286490082549671318816460190005027727158982476105672519153156995791696935134246421248726697195840916845922728866354004298400224686646212202214400711232323584.000000
+3: xlist_0: 0, xlist_id: 1, dx: 68099359957378936860240913941927804556621730286490082549671318816460190005027727158982476105672519153156995791696935134246421248726697195840916845922728866354004298400224686646212202214400711232323584.000000
+exit -1 dx > -rcut
