@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['rdf_5fone_5ftype_5fone_5fstep_8',['rdf_one_type_one_step',['../namespaceifalib_1_1rdf.html#a34485b933e9b009f80cd00b06d3df8a0',1,'ifalib::rdf']]],
-  ['rdf_5fone_5ftype_5fone_5fstep_5fpython_9',['rdf_one_type_one_step_python',['../namespaceifalib_1_1rdf.html#ab1846fec5a60fb19d905d1396c33ad8f',1,'ifalib::rdf']]],
-  ['rdf_5ftwo_5ftypes_5fmany_5fsteps_10',['rdf_two_types_many_steps',['../namespaceifalib_1_1rdf.html#a04e68486010f53234b4f1d33f9d87239',1,'ifalib::rdf']]]
+  ['neighbour_20',['neighbour',['../namespaceifalib_1_1neighbour.html#a769ef364a16212cc19b9c0b0f85ed25b',1,'ifalib.neighbour.neighbour()'],['../namespaceifalib_1_1neighbour__backup.html#a42584116d516a5d9fae1f3812be1bf3a',1,'ifalib.neighbour_backup.neighbour()']]]
 ];

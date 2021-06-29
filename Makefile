@@ -6,7 +6,7 @@ test:
 test_gcc:
 	${MAKE} -C tests test
 
-pip: git clean
+pip: git clean test
 	python setup.py sdist bdist_wheel --universal # Universal mean python2/3
 	twine upload dist/ifalib-*.tar.gz
 
@@ -16,10 +16,13 @@ clean:
 	rm -rf build
 	rm -rf dist
 
-git: clean
+git: clean doxy
 	git add *
 	git commit -m "New commit"
 	git push
 
 activate:
 	source ifa/bin/activate
+
+doxy:
+	doxygen Doxyfile

@@ -1,6 +1,3 @@
-#ifndef _CTYPES_H_
-#define _CTYPES_H_
-
 #ifdef  __cplusplus
 extern "C" {
 #endif
@@ -17,8 +14,6 @@ int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps
 #ifdef  __cplusplus
 }
 #endif
-
-#endif  /* _CTYPES_H_ */
 
 #define MAX_X_LIST 3
 #define MAX_L_LIST MAX_X_LIST*MAX_X_LIST*MAX_X_LIST
