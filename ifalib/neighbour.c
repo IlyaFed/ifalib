@@ -135,7 +135,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
     for (int i = 0; i < Npart; i++){
         belongList[i] = 0;
     }
-    int kflag=0;
+    int kflag=0, kflag_old=0;
     double dist1=0, dist2=0;;
     for (int i = 0 ; i < Npart; i++){
         if (belongList[i] == 0) {
@@ -155,13 +155,18 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
                     // It's not connected yet to anyone
                     belongList[j] = belongList[i];
                 } else {
+                    if (belongList[i] != belongList[j]){
                     // It's already in cluster (maybe just one particle) we connect to this cluster
-                    for (int l = i; l < Npart; l++){
-                        if (belongList[l] == kflag){
-                            belongList[l] = belongList[j];
+                        // printf ("more then two in cluster %d (for %d) Kflag %d Kflag_old %d\n", j, i, belongList[j], belongList[i]);
+                        kflag_old = belongList[i];
+                        for (int l = 0; l < Npart; l++){
+                            if (belongList[l] == kflag_old){
+                                belongList[l] = belongList[j];
+                                // printf ("add to %d \n", l);
+                            }
                         }
+                        kflag--;
                     }
-                    kflag--;
                 }
             }
         }
@@ -174,10 +179,15 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
         for (int i = 0; i < molsInfo->Maxtypes; i++){
             typesCount[i] = 0;
         }
+        int k_size = 0;
         for (int i = 0; i < Npart; i++){
             if (belongList[i] == k){
+                k_size ++ ;
                 typesCount[sysState.types[i]] ++;
             }
+        }
+        if (k_size > 2){
+            // printf( "Realy more than %d \n", typesCount[0]);
         }
         update_mol_info(typesCount);
     }
