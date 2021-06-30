@@ -6,11 +6,11 @@ from distutils.core import setup, Extension
 
 module_rdf = Extension('ifalib.librdf',
                     sources = ['ifalib/rdf.c'],
-                    include_dirs=numpy.get_include()) 
+                    include_dirs=[numpy.get_include()]) 
 
 module_neighbour = Extension('ifalib.libneighbour',
                     sources = ['ifalib/neighbour.c'],
-                    include_dirs=numpy.get_include()) 
+                    include_dirs=[numpy.get_include()]) 
 
 # class install(_install):
 #     def run(self):
