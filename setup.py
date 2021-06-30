@@ -5,12 +5,10 @@ from distutils.command.install import install as _install
 from distutils.core import setup, Extension
 
 module_rdf = Extension('ifalib.librdf',
-                    sources = ['ifalib/rdf.c'],
-                    include_dirs=[numpy.get_include()]) 
+                    sources = ['ifalib/rdf.c'])
 
 module_neighbour = Extension('ifalib.libneighbour',
-                    sources = ['ifalib/neighbour.c'],
-                    include_dirs=[numpy.get_include()]) 
+                    sources = ['ifalib/neighbour.c'])
 
 # class install(_install):
 #     def run(self):
@@ -26,7 +24,7 @@ setup(
     # package_data={'ifalib': ['ifalib/librdf.so']},
     # cmdclass={'install': install},
     ext_modules=[module_rdf, module_neighbour],
-    version='0.3.3 ',
+    version='0.3.4 ',
     url='https://github.com/IlyaFed/ifalib/tree/master',
     description='Ilya Fedorov Analysis',
     author='Ilya Fedorov',
