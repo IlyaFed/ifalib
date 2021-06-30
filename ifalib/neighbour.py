@@ -13,7 +13,6 @@
 
 import os, glob
 import ctypes 
-# import numpy as np
 
 def neighbour(coord, types, cell, rcut, maxunique=4): 
     '''! Radial Distribution Function between two types of particles for several steps
