@@ -98,18 +98,22 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
         if (molsInfo.molInfo[i].exist == 0): break
         label = ""
         composition = {}
-        count = 0
+        number_of_particles = 0
         for key in Types_label:
             n = molsInfo.molInfo[i].typesCount[Types_label[key]]
             if ( n > 0):
                 composition[key] = n
                 label += str(key) + str(n) + " "
+            number_of_particles+= n
+
         # remove last space
         if len(label)>0:
             label = label[:-1]
-        count = []
+        count_of_molecules = []
+        count_of_particles = []
         for step in range(molsInfo.Maxsteps):
-            count.append(molsInfo.molInfo[i].quantityByStep[step])
+            count_of_molecules.append(molsInfo.molInfo[i].quantityByStep[step])
+            count_of_particles.append(molsInfo.molInfo[i].quantityByStep[step]*number_of_particles)
         
         if (i == molsInfo.Maxunique-1):
             label = "unknown"
@@ -117,7 +121,8 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
 
         list_of_molecules[label] = {
             'composition': composition,
-            'count': count
+            'count_of_molecules': count_of_molecules,
+            'count_of_particles': count_of_particles,
         }
 
 

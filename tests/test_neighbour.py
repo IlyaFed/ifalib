@@ -41,8 +41,12 @@ def test_h_h2_structures():
     
     returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, Maxunique)
     print (returned_dict)
-    assert(returned_dict['H1']['count'][0]==Npart/3)
-    assert(returned_dict['H2']['count'][0]==Npart/3)
+    assert(returned_dict['H1']['count_of_molecules'][0]==Npart/3)
+    assert(returned_dict['H2']['count_of_molecules'][0]==Npart/3)
+    number_of_determined_particles = 0
+    for key in returned_dict:
+        number_of_determined_particles += returned_dict[key]['count_of_particles'][0]
+    assert(number_of_determined_particles == Npart)
 
 def test_h_h2_h3_h4_structures():
     Rcut = 1.0
@@ -84,10 +88,14 @@ def test_h_h2_h3_h4_structures():
 
     returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, Maxunique)
     print (returned_dict)
-    assert(returned_dict['H1']['count'][0]==(Npart-3)/3)
-    assert(returned_dict['H2']['count'][0]==(Npart-3)/3-2)
-    assert(returned_dict['H3']['count'][0]==1)
-    assert(returned_dict['H4']['count'][0]==1)
+    assert(returned_dict['H1']['count_of_molecules'][0]==(Npart-3)/3)
+    assert(returned_dict['H2']['count_of_molecules'][0]==(Npart-3)/3-2)
+    assert(returned_dict['H3']['count_of_molecules'][0]==1)
+    assert(returned_dict['H4']['count_of_molecules'][0]==1)
+    number_of_determined_particles = 0
+    for key in returned_dict:
+        number_of_determined_particles += returned_dict[key]['count_of_particles'][0]
+    assert(number_of_determined_particles == Npart)
 
 def test_h_h2_e_structures():
     Rcut = 1.0
@@ -119,5 +127,9 @@ def test_h_h2_e_structures():
     
     returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, Maxunique)
     print (returned_dict)
-    assert(returned_dict['H1 e1']['count'][0]==Npart/2/3)
-    assert(returned_dict['H2 e2']['count'][0]==Npart/2/3)
+    assert(returned_dict['H1 e1']['count_of_molecules'][0]==Npart/2/3)
+    assert(returned_dict['H2 e2']['count_of_molecules'][0]==Npart/2/3)
+    number_of_determined_particles = 0
+    for key in returned_dict:
+        number_of_determined_particles += returned_dict[key]['count_of_particles'][0]
+    assert(number_of_determined_particles == Npart)
