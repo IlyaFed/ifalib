@@ -59,7 +59,7 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
                     ('r', ctypes.POINTER(ctypes.c_double))]
 
     # Указываем, что функция возвращает MolsInfo *
-    neighbour_ctypes.neighbour.restype = MolsInfo
+    neighbour_ctypes.neighbour.restype = ctypes.POINTER(MolsInfo)
     # Указываем, что функция принимает аргумент void *
     neighbour_ctypes.neighbour.argtypes = [SystemState, ctypes.c_double, ctypes.c_int]
 
@@ -89,8 +89,9 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
     sysState = SystemState(Npart, Nsteps, maxtypes, Types_c_int, cell, Rpart_c_double)
 
     # maxunique+1 because we want to add other")
-    molsInfo = neighbour_ctypes.neighbour(sysState,rcut, maxunique+1)
-
+    molsInfo_p = neighbour_ctypes.neighbour(sysState,rcut, maxunique+1)
+    molsInfo = molsInfo_p.contents #ctypes.byref(molsInfo_p)
+  
     list_of_molecules = {}
     for i in range(molsInfo.Maxunique):
         # print ("molInfo[{:d}]: ".format(i), molsInfo.molInfo[i].exist)
@@ -119,4 +120,9 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
             'count': count
         }
 
+
+    # Free memory
+    neighbour_ctypes.freeMolsInfo.argtypes = [ctypes.c_void_p]
+    neighbour_ctypes.freeMolsInfo(molsInfo_p)
+    
     return list_of_molecules

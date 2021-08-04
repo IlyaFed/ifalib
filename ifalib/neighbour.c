@@ -39,8 +39,8 @@ struct  SystemState
 
 // int get_nearests(double x1, double x2, double cell);
 // int get_distances(double * r1, double * r2, double cell);
-struct MolsInfo neighbour(struct SystemState sysState, double rcut, int maxunique);
-
+struct MolsInfo* neighbour(struct SystemState sysState, double rcut, int maxunique);
+void freeMolsInfo(struct MolsInfo *molsInfo);
 
 #ifdef  __cplusplus
 }
@@ -111,6 +111,7 @@ void update_mol_info(int* typesCount){
     if (find_flag == 1 ){
         // Found!
         molsInfo->molInfo[i].quantityByStep[molsInfo->step] ++;
+        free(typesCount);
     } else {
         // printf ( "Create new unique, typesCount[0]: %d\n", typesCount[0]);
         // Not found. 
@@ -193,7 +194,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
     }
 }
 
-struct MolsInfo neighbour(struct SystemState sysState, double rcut, int maxunique){
+struct MolsInfo* neighbour(struct SystemState sysState, double rcut, int maxunique){
     /*! \brief Function return Step dependent list of particle culsters from X,Y,Z coords of particles
     1) For every step in Nsteps, we get sysState[step] and sysState[step+1]. 
     2) Look, which particles stay together (distance less then rcut) in both steps. (bound pair)
@@ -235,5 +236,19 @@ struct MolsInfo neighbour(struct SystemState sysState, double rcut, int maxuniqu
         molsInfo->step++;
     }
     // printf ("Debug at the end: exist: %d\n", molsInfo->molInfo[0].exist);
-    return *molsInfo;
+    return molsInfo;
+}
+
+
+void freeMolsInfo(struct MolsInfo *molsInfo){
+    
+    for (int i = 0; i < molsInfo->Maxunique; i++){
+        free(molsInfo->molInfo[i].quantityByStep);
+
+        if (molsInfo->molInfo[i].exist == 1){
+            free(molsInfo->molInfo[i].typesCount);
+        }
+    }
+    free(molsInfo->molInfo);
+    free(molsInfo);
 }

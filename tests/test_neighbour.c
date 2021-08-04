@@ -34,13 +34,14 @@ int test_h2_structures(){
                 }
     }
     
-    struct MolsInfo molsInfo = neighbour(sysState, Rcut, 10);
+    struct MolsInfo *molsInfo = neighbour(sysState, Rcut, 10);
     printf ("Test H2 molecule: ");
-    printf ("step: %d (%s) | ", molsInfo.step, molsInfo.step==Nsteps-1 ? "True" : "False");
+    printf ("step: %d (%s) | ", molsInfo->step, molsInfo->step==Nsteps-1 ? "True" : "False");
     
-    printf ("exist: %d (%s) | ", molsInfo.molInfo[0].exist, molsInfo.molInfo[0].exist==1 ? "True" : "False");
-    printf ("quantity: %d (%s) | ", molsInfo.molInfo[0].quantityByStep[0], molsInfo.molInfo[0].quantityByStep[0] == Npart/2 ? "True" : "False");
-    printf ("nomore: (%s) \n", molsInfo.molInfo[1].exist==0 ? "True" : "False");
+    printf ("exist: %d (%s) | ", molsInfo->molInfo[0].exist, molsInfo->molInfo[0].exist==1 ? "True" : "False");
+    printf ("quantity: %d (%s) | ", molsInfo->molInfo[0].quantityByStep[0], molsInfo->molInfo[0].quantityByStep[0] == Npart/2 ? "True" : "False");
+    printf ("nomore: (%s) \n", molsInfo->molInfo[1].exist==0 ? "True" : "False");
+    freeMolsInfo(molsInfo);
     return 0;
 }
 
@@ -78,15 +79,16 @@ int test_h_h2_structures(){
                     }
                 }
     }
-    struct MolsInfo molsInfo = neighbour(sysState, Rcut, 10);
+    struct MolsInfo* molsInfo = neighbour(sysState, Rcut, 10);
     printf ("Test H2 and H: ");
-    printf ("step: %d (%s) | ", molsInfo.step, molsInfo.step==Nsteps-1 ? "True" : "False");
+    printf ("step: %d (%s) | ", molsInfo->step, molsInfo->step==Nsteps-1 ? "True" : "False");
     
-    printf ("One exist: %d (%s) | ", molsInfo.molInfo[0].exist, molsInfo.molInfo[0].exist==1 ? "True" : "False");
-    printf ("One quantity: %d (%s) | ", molsInfo.molInfo[0].quantityByStep[0], molsInfo.molInfo[0].quantityByStep[0] == (int) Npart/3 ? "True" : "False");
-    printf ("Two exist: %d (%s) | ", molsInfo.molInfo[1].exist, molsInfo.molInfo[1].exist==1 ? "True" : "False");
-    printf ("Two quantity: %d (%s) | ", molsInfo.molInfo[1].quantityByStep[0], molsInfo.molInfo[1].quantityByStep[0] == (int) Npart/3 ? "True" : "False");
-    printf ("nomore: (%s) \n", molsInfo.molInfo[2].exist==0 ? "True" : "False");
+    printf ("One exist: %d (%s) | ", molsInfo->molInfo[0].exist, molsInfo->molInfo[0].exist==1 ? "True" : "False");
+    printf ("One quantity: %d (%s) | ", molsInfo->molInfo[0].quantityByStep[0], molsInfo->molInfo[0].quantityByStep[0] == (int) Npart/3 ? "True" : "False");
+    printf ("Two exist: %d (%s) | ", molsInfo->molInfo[1].exist, molsInfo->molInfo[1].exist==1 ? "True" : "False");
+    printf ("Two quantity: %d (%s) | ", molsInfo->molInfo[1].quantityByStep[0], molsInfo->molInfo[1].quantityByStep[0] == (int) Npart/3 ? "True" : "False");
+    printf ("nomore: (%s) \n", molsInfo->molInfo[2].exist==0 ? "True" : "False");
+    freeMolsInfo(molsInfo);
     return 0;
 }
 
@@ -117,13 +119,14 @@ int test_h_structures(){
                     idp++;
                 }
     }
-    struct MolsInfo molsInfo = neighbour(sysState, Rcut, 10);
+    struct MolsInfo *molsInfo = neighbour(sysState, Rcut, 10);
     printf ("Test H: ");
-    printf ("step: %d (%s) | ", molsInfo.step, molsInfo.step==Nsteps-1 ? "True" : "False");
+    printf ("step: %d (%s) | ", molsInfo->step, molsInfo->step==Nsteps-1 ? "True" : "False");
     
-    printf ("exist: %d (%s) | ", molsInfo.molInfo[0].exist, molsInfo.molInfo[0].exist==1 ? "True" : "False");
-    printf ("quantity: %d (%s) | ", molsInfo.molInfo[0].quantityByStep[0], molsInfo.molInfo[0].quantityByStep[0] == Npart ? "True" : "False");
-    printf ("nomore: (%s) \n", molsInfo.molInfo[1].exist==0 ? "True" : "False");
+    printf ("exist: %d (%s) | ", molsInfo->molInfo[0].exist, molsInfo->molInfo[0].exist==1 ? "True" : "False");
+    printf ("quantity: %d (%s) | ", molsInfo->molInfo[0].quantityByStep[0], molsInfo->molInfo[0].quantityByStep[0] == Npart ? "True" : "False");
+    printf ("nomore: (%s) \n", molsInfo->molInfo[1].exist==0 ? "True" : "False");
+    freeMolsInfo(molsInfo);
     return 0;
 }
 
@@ -146,12 +149,13 @@ int test_diag_line(){
             sysState.types[idp] = 0;
         }
     }
-    struct MolsInfo molsInfo = neighbour(sysState, Rcut, 10);
+    struct MolsInfo *molsInfo = neighbour(sysState, Rcut, 10);
     
     printf ("Test random line: ");
-    printf ("step: %d | ", molsInfo.step);
-    printf ("exist: %d | ", molsInfo.molInfo[0].exist);
-    printf ("quantity: %d \n", molsInfo.molInfo[0].quantityByStep[0]);
+    printf ("step: %d | ", molsInfo->step);
+    printf ("exist: %d | ", molsInfo->molInfo[0].exist);
+    printf ("quantity: %d \n", molsInfo->molInfo[0].quantityByStep[0]);
+    freeMolsInfo(molsInfo);
     return 0;
 }
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['neighbour_20analysis_23',['Neighbour analysis',['../index.html',1,'']]]
+  ['neighbour_20analysis_21',['Neighbour analysis',['../index.html',1,'']]]
 ];
