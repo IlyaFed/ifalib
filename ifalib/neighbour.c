@@ -90,7 +90,7 @@ void update_mol_info(int* typesCount){
     int find_flag = 0;
     int compare_flag=0;
     int i = 0;
-    for (i = 0; i < molsInfo->Maxunique; i++){
+    for (i = 0; i < molsInfo->Maxunique-1; i++){
         if (molsInfo->molInfo[i].exist == 0){
             break;
         }
