@@ -40,6 +40,7 @@ int get_nearests(double x1, double x2, double cell, double rcut){
     while (dx < rcut){
         if (x_list_id-x_list_0 >= MAX_X_LIST){
             printf ("dx: %f | ", dx);
+            printf ("max_x_list: %d | ", MAX_X_LIST);
             printf("exit -1 (dx < rcut)\n");
             exit(-1);
         }
@@ -52,6 +53,7 @@ int get_nearests(double x1, double x2, double cell, double rcut){
     while (dx > -rcut){
         if (x_list_id-x_list_0 >= MAX_X_LIST){
             printf ("dx: %f | ", dx);
+            printf ("max_x_list: %d | ", MAX_X_LIST);
             printf("exit -1 (dx > -rcut)\n");
             exit(-1);
         }
@@ -93,7 +95,8 @@ int get_distances(double * r1, double * r2, double cell, double rcut){
 
 int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps, double * Rpart1, double * Rpart2, double cell){
     // TODO  max_x_list should be automatic acoording Cell size and rcut
-    MAX_X_LIST = (int)2*rcut/cell+1;
+    MAX_X_LIST = (int)2*rcut/cell+2;
+
     MAX_L_LIST = MAX_X_LIST * MAX_X_LIST * MAX_X_LIST;
     x_list = (double *) malloc (sizeof(double)*MAX_X_LIST*3);
     l_list = (double *) malloc (sizeof(double)*MAX_L_LIST);

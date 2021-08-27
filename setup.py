@@ -24,7 +24,7 @@ setup(
     # package_data={'ifalib': ['ifalib/librdf.so']},
     # cmdclass={'install': install},
     ext_modules=[module_rdf, module_neighbour],
-    version='0.3.9',
+    version='0.3.10',
     url='https://github.com/IlyaFed/ifalib/tree/master',    description='Ilya Fedorov Analysis',
     author='Ilya Fedorov',
     author_email='ilya.d.fedorov@phystech.edu',

@@ -1,7 +1,7 @@
 #include "../ifalib/rdf.c"
 
 int main(){
-    double rcut=13.0, cell=26.4;
+    double rcut=40.0, cell=26.4;
     int nbins=100;
     int Npart=1000, Nsteps=1;
     double * coord1 = calloc(Npart*Nsteps*3, 0);
