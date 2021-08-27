@@ -15,12 +15,13 @@ int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps
 }
 #endif
 
-#define MAX_X_LIST 3
-#define MAX_L_LIST MAX_X_LIST*MAX_X_LIST*MAX_X_LIST
+// #define MAX_X_LIST 3
+// #define MAX_L_LIST MAX_X_LIST*MAX_X_LIST*MAX_X_LIST
 
-double x_list[MAX_X_LIST*3]; // 3x3
+int MAX_X_LIST, MAX_L_LIST;
+double* x_list; //[MAX_X_LIST*3]; // 3x3
 int x_list_id, x_list_0;
-double l_list[MAX_X_LIST*MAX_X_LIST*MAX_X_LIST]; // 3x3x3
+double* l_list; //[MAX_X_LIST*MAX_X_LIST*MAX_X_LIST]; // 3x3x3
 double l_list_buf=0;
 int l_list_id;
 double dx, dx0;
@@ -91,6 +92,11 @@ int get_distances(double * r1, double * r2, double cell, double rcut){
 }
 
 int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps, double * Rpart1, double * Rpart2, double cell){
+    // TODO  max_x_list should be automatic acoording Cell size and rcut
+    MAX_X_LIST = (int)2*rcut/cell+1;
+    MAX_L_LIST = MAX_X_LIST * MAX_X_LIST * MAX_X_LIST;
+    x_list = (double *) malloc (sizeof(double)*MAX_X_LIST*3);
+    l_list = (double *) malloc (sizeof(double)*MAX_L_LIST);
     double rho = Npart2/(cell*cell*cell);
     int counts[nbins];
     for (int i=0; i<nbins; i++){
