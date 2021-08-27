@@ -122,5 +122,8 @@ int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps
         g_r[i] = ( counts[i]/(4*3.14*(pow(dbins*(i+0.5),2)*dbins)) / Npart1/Nsteps) / rho;
     }
 
+    free(x_list);
+    free(l_list);
+
     return 0;
 }
