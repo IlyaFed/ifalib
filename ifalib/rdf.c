@@ -101,7 +101,7 @@ int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps
     x_list = (double *) malloc (sizeof(double)*MAX_X_LIST*3);
     l_list = (double *) malloc (sizeof(double)*MAX_L_LIST);
     double rho = Npart2/(cell*cell*cell);
-    int counts[nbins];
+    int* counts = (int *) malloc (sizeof(int)*nbins);
     for (int i=0; i<nbins; i++){
         counts[i] = 0;
     }
@@ -124,6 +124,7 @@ int rdf(int nbins, double rcut, double * g_r, int Npart1, int Npart2, int Nsteps
 
     free(x_list);
     free(l_list);
-
+    free(counts);
+    
     return 0;
 }

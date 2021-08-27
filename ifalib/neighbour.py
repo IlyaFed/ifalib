@@ -127,5 +127,7 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
     # Free memory
     neighbour_ctypes.freeMolsInfo.argtypes = [ctypes.c_void_p]
     neighbour_ctypes.freeMolsInfo(molsInfo_p)
+
+    del Rpart, Rpart_c_double, types_for_c, Types_c_int
     
     return list_of_molecules

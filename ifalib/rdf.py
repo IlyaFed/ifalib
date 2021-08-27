@@ -63,6 +63,8 @@ def rdf_two_types_many_steps(coord1, coord2, cell, rcut, nbins=100):
     
     dbins=rcut/nbins
     bins=[dbins/2+i*dbins for i in range(nbins)]
+    del Rpart1, Rpart2
+    del Rpart1_c_double, Rpart2_c_double
     return bins, list(rdf_c_double)
 
 def rdf_one_type_one_step(coord, cell, rcut,nbins):
@@ -99,6 +101,7 @@ def rdf_one_type_one_step(coord, cell, rcut,nbins):
                                 Rpart1_c_double,Rpart2_c_double,cell)
     dbins=rcut/nbins
     bins=[dbins/2+i*dbins for i in range(nbins)]
+    del Rpart1_c_double, Rpart2_c_double
     return bins, list(rdf_c_double)
 
 def get_nearest_axes(r1,r2,cell):
