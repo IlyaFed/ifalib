@@ -12,7 +12,7 @@ struct MolInfo
     // Structure of just one cluster
     int exist; // if 1 that exist
     int* typesCount; // len() = Maxtypes // Number of types in molecule
-    int* quantityByStep; // len() = MAxsteps // number of such molecule for every step
+    int* quantityByStep; // len() = Mxsteps // number of such molecule for every step
 };
 
 struct MolsInfo {
@@ -21,6 +21,7 @@ struct MolsInfo {
     int Maxsteps;  // Number of steps
     int Maxunique; // Number of unique molecules allowed
     int step; // Current step
+    int* particleAttachemnt; // Size [Npart*Nstep=molinfo_id
     struct MolInfo* molInfo; // len() = Maxunique // massive of MolInfo
 };
 
@@ -85,7 +86,7 @@ double get_distance(double* r1, double* r2, double cell){
     return sqrt(dr);
 }
 
-void update_mol_info(int* typesCount, int k_size){
+int update_mol_info(int* typesCount, int k_size){
     // find in mols_info
     // printf("ksize = %d\n", k_size);
     int find_flag = 0;
@@ -126,6 +127,7 @@ void update_mol_info(int* typesCount, int k_size){
         }
         molsInfo->molInfo[i].quantityByStep[molsInfo->step] +=k_size;
     }
+    return i;
 }
 
 void get_neighboard_list(struct SystemState sysState, int step, double rcut){
@@ -183,6 +185,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
     // Here we sort info from belongList and sysState->types 
     // to update MolInfo list with unique_count members
     int n_part = 0;
+    int k_belong_molinfo_id[kflag+1];
     for (int k = 1; k <= kflag; k++){
         int *typesCount = (int *) malloc (sizeof(int)*molsInfo->Maxtypes);
         for (int i = 0; i < molsInfo->Maxtypes; i++){
@@ -196,7 +199,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
             }
         }
         if (k_size > 0){
-            update_mol_info(typesCount, k_size);    
+            k_belong_molinfo_id[k] = update_mol_info(typesCount, k_size);    
         } else {
             free(typesCount);
         }
@@ -209,6 +212,11 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
             printf("Something wrong %d\n", bl);
         }
     }
+    for (int i = 0; i < Npart; i++){
+        molsInfo->particleAttachemnt[molsInfo->step*Npart+i] = k_belong_molinfo_id[belongList[i]];    
+    } 
+    
+
 }
 
 struct MolsInfo* neighbour(struct SystemState sysState, double rcut, int maxunique){
@@ -233,6 +241,7 @@ struct MolsInfo* neighbour(struct SystemState sysState, double rcut, int maxuniq
     molsInfo->Maxunique = maxunique;
     molsInfo->step=0;
     molsInfo->molInfo = (struct MolInfo *) malloc (sizeof(struct MolInfo)*maxunique);
+    molsInfo->particleAttachemnt = ( int *) malloc (sizeof(int)*(sysState.Nsteps-1)*sysState.Npart);
     for (int i = 0; i < maxunique; i++){
         molsInfo->molInfo[i].exist=0;
         molsInfo->molInfo[i].quantityByStep = (int *) malloc (sizeof(int)*(sysState.Nsteps-1));
@@ -260,6 +269,7 @@ void freeMolsInfo(struct MolsInfo *molsInfo){
             free(molsInfo->molInfo[i].typesCount);
         }
     }
+    free(molsInfo->particleAttachemnt);
     free(molsInfo->molInfo);
     free(molsInfo);
 }

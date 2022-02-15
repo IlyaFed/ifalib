@@ -12,21 +12,23 @@
 # - None.
 
 import os, glob
-import ctypes 
+import ctypes
 
-def neighbour(coord, types, cell, rcut, maxunique=4): 
-    '''! Radial Distribution Function between two types of particles for several steps
-    density for RDF calculate by number of 2nd particles (len(coord2[0])).
+def neighbour(coord, types, cell, rcut, maxunique=4, l_of_p=False): 
+    '''! Neighbour analysis of system
     @param coord XYZ coordinates of particles, format coord[Nstep][Nparticles][Dimension]
     @param types Type of every particle
     @param cell Size of cubic cell
     @param rcut Max radius of RDF
     @param maxunique maximum number molecules type to find (default: 4)
-
+    @param l_of_p Flag (on/off) list_of_particles in return
     @return [{
             'composition': {'H': 2, 'e':1},
             'label': 'H2 e1',
             'count': [Nmol[step] for step in range(Nstep)]
+            }, ...], (l_of_p==on) {'
+            'label': [label] = id,
+            'particle_attach': [[id for idp in range(Npart)] for step in range(Nstep)]
             }, ...]
     }
     '''
@@ -48,6 +50,7 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
                     ('Maxsteps', ctypes.c_int),
                     ('Maxunique', ctypes.c_int),
                     ('step', ctypes.c_int),
+                    ('particleAttachemnt', ctypes.POINTER(ctypes.c_int)),
                     ('molInfo', ctypes.POINTER(MolInfo))]
 
     class SystemState(ctypes.Structure):
@@ -93,6 +96,10 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
     molsInfo = molsInfo_p.contents #ctypes.byref(molsInfo_p)
   
     list_of_molecules = {}
+    list_of_particles = {
+        'label': {},
+        'particle_attach': [[0 for idp in range(Npart)] for step in range(Nsteps) ] # [step][idp]  
+    }
     for i in range(molsInfo.Maxunique):
         # print ("molInfo[{:d}]: ".format(i), molsInfo.molInfo[i].exist)
         if (molsInfo.molInfo[i].exist == 0): break
@@ -122,6 +129,12 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
             'composition': composition,
             'count_of_particles': count_of_particles
         }
+        list_of_particles['label'][label]=i
+    
+    # Create list of particle attachments
+    for step in range(Nsteps):
+        for idp in range(Npart):
+            list_of_particles['particle_attach'][step][idp]=molsInfo.particleAttachemnt[step*Npart + idp]
 
 
     # Free memory
@@ -130,4 +143,7 @@ def neighbour(coord, types, cell, rcut, maxunique=4):
 
     del Rpart, Rpart_c_double, types_for_c, Types_c_int
     
-    return list_of_molecules
+    if l_of_p:
+        return list_of_molecules, list_of_particles
+    else:
+        return list_of_molecules

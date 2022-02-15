@@ -205,10 +205,10 @@ int test_diag_line(){
 }
 
 int main(){
-    // test_h2_structures();
-    // test_h_structures();
-    // test_h_h2_structures();
-    // test_diag_line();
+    test_h2_structures();
+    test_h_structures();
+    test_h_h2_structures();
+    test_diag_line();
     test_h_random();
     return 0;    
 }

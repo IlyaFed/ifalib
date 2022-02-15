@@ -8,37 +8,39 @@ Radial Distribution Analysis.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a769ef364a16212cc19b9c0b0f85ed25b}{neighbour}} (coord, types, cell, rcut, maxunique=4)
-\begin{DoxyCompactList}\small\item\em Radial Distribution Function between two types of particles for several steps density for RDF calculate by number of 2nd particles (len(coord2\mbox{[}0\mbox{]})). \end{DoxyCompactList}\end{DoxyCompactItemize}
+def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a4c83e05d4b98d8ff39fb473366088046}{neighbour}} (coord, types, cell, rcut, maxunique=4, l\+\_\+of\+\_\+p=False)
+\begin{DoxyCompactList}\small\item\em Neighbour analysis of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Radial Distribution Analysis. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespaceifalib_1_1neighbour_a769ef364a16212cc19b9c0b0f85ed25b}\label{namespaceifalib_1_1neighbour_a769ef364a16212cc19b9c0b0f85ed25b}} 
+\mbox{\Hypertarget{namespaceifalib_1_1neighbour_a4c83e05d4b98d8ff39fb473366088046}\label{namespaceifalib_1_1neighbour_a4c83e05d4b98d8ff39fb473366088046}} 
 \index{ifalib.neighbour@{ifalib.neighbour}!neighbour@{neighbour}}
 \index{neighbour@{neighbour}!ifalib.neighbour@{ifalib.neighbour}}
 \doxysubsubsection{\texorpdfstring{neighbour()}{neighbour()}}
-{\footnotesize\ttfamily def ifalib.\+neighbour.\+neighbour (\begin{DoxyParamCaption}\item[{}]{coord,  }\item[{}]{types,  }\item[{}]{cell,  }\item[{}]{rcut,  }\item[{}]{maxunique = {\ttfamily 4} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily def ifalib.\+neighbour.\+neighbour (\begin{DoxyParamCaption}\item[{}]{coord,  }\item[{}]{types,  }\item[{}]{cell,  }\item[{}]{rcut,  }\item[{}]{maxunique = {\ttfamily 4},  }\item[{}]{l\+\_\+of\+\_\+p = {\ttfamily False} }\end{DoxyParamCaption})}
 
 
 
-Radial Distribution Function between two types of particles for several steps density for RDF calculate by number of 2nd particles (len(coord2\mbox{[}0\mbox{]})). 
+Neighbour analysis of system. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em coord} & XYZ coordinates of particles, format coord\mbox{[}Nstep\mbox{]}\mbox{[}Nparticles\mbox{]}\mbox{[}Dimension\mbox{]} \\
+{\em coord} & X\+YZ coordinates of particles, format coord\mbox{[}Nstep\mbox{]}\mbox{[}Nparticles\mbox{]}\mbox{[}Dimension\mbox{]} \\
 \hline
 {\em types} & Type of every particle \\
 \hline
 {\em cell} & Size of cubic cell \\
 \hline
-{\em rcut} & Max radius of RDF \\
+{\em rcut} & Max radius of R\+DF \\
 \hline
-{\em maxunique} & maximum number molecules type to find (default\+: 4)\\
+{\em maxunique} & maximum number molecules type to find (default\+: 4) \\
+\hline
+{\em l\+\_\+of\+\_\+p} & Flag (on/off) list\+\_\+of\+\_\+particles in return \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\mbox{[}\{ \textquotesingle{}composition\textquotesingle{}\+: \{\textquotesingle{}H\textquotesingle{}\+: 2, \textquotesingle{}e\textquotesingle{}\+:1\}, \textquotesingle{}label\textquotesingle{}\+: \textquotesingle{}H2 e1\textquotesingle{}, \textquotesingle{}count\textquotesingle{}\+: \mbox{[}Nmol\mbox{[}step\mbox{]} for step in range(\+Nstep)\mbox{]} \}, ...\mbox{]} \} 
+\mbox{[}\{ \textquotesingle{}composition\textquotesingle{}\+: \{\textquotesingle{}H\textquotesingle{}\+: 2, \textquotesingle{}e\textquotesingle{}\+:1\}, \textquotesingle{}label\textquotesingle{}\+: \textquotesingle{}H2 e1\textquotesingle{}, \textquotesingle{}count\textquotesingle{}\+: \mbox{[}Nmol\mbox{[}step\mbox{]} for step in range(\+Nstep)\mbox{]} \}, ...\mbox{]}, (l\+\_\+of\+\_\+p==on) \{\textquotesingle{} \textquotesingle{}label\textquotesingle{}\+: \mbox{[}label\mbox{]} = id, \textquotesingle{}particle\+\_\+attach\textquotesingle{}\+: \mbox{[}\mbox{[}id for idp in range(\+Npart)\mbox{]} for step in range(\+Nstep)\mbox{]} \}, ...\mbox{]} \} 
 \end{DoxyReturn}
