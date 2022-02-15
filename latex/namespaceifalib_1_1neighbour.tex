@@ -8,7 +8,7 @@ Radial Distribution Analysis.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a3aedde88a06b3e349d80c7a865513164}{neighbour}} (coord, types, cell, rcut, step\+\_\+to\+\_\+compare=1, maxunique=4, l\+\_\+of\+\_\+p=False)
+def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a82544a309bee91a7703c161fcd749414}{neighbour}} (coord, types, cell, rcut, step\+\_\+to\+\_\+compare=1, maxunique=4, status=False)
 \begin{DoxyCompactList}\small\item\em Neighbour analysis of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -16,11 +16,11 @@ def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a3aedde88a06b3e349d80c7a865513
 Radial Distribution Analysis. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespaceifalib_1_1neighbour_a3aedde88a06b3e349d80c7a865513164}\label{namespaceifalib_1_1neighbour_a3aedde88a06b3e349d80c7a865513164}} 
+\mbox{\Hypertarget{namespaceifalib_1_1neighbour_a82544a309bee91a7703c161fcd749414}\label{namespaceifalib_1_1neighbour_a82544a309bee91a7703c161fcd749414}} 
 \index{ifalib.neighbour@{ifalib.neighbour}!neighbour@{neighbour}}
 \index{neighbour@{neighbour}!ifalib.neighbour@{ifalib.neighbour}}
 \doxysubsubsection{\texorpdfstring{neighbour()}{neighbour()}}
-{\footnotesize\ttfamily def ifalib.\+neighbour.\+neighbour (\begin{DoxyParamCaption}\item[{}]{coord,  }\item[{}]{types,  }\item[{}]{cell,  }\item[{}]{rcut,  }\item[{}]{step\+\_\+to\+\_\+compare = {\ttfamily 1},  }\item[{}]{maxunique = {\ttfamily 4},  }\item[{}]{l\+\_\+of\+\_\+p = {\ttfamily False} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily def ifalib.\+neighbour.\+neighbour (\begin{DoxyParamCaption}\item[{}]{coord,  }\item[{}]{types,  }\item[{}]{cell,  }\item[{}]{rcut,  }\item[{}]{step\+\_\+to\+\_\+compare = {\ttfamily 1},  }\item[{}]{maxunique = {\ttfamily 4},  }\item[{}]{status = {\ttfamily False} }\end{DoxyParamCaption})}
 
 
 
@@ -40,9 +40,10 @@ Neighbour analysis of system.
 \hline
 {\em maxunique} & maximum number molecules type to find (default\+: 4) \\
 \hline
-{\em l\+\_\+of\+\_\+p} & Flag (on/off) list\+\_\+of\+\_\+particles in return (default\+: False) \\
+{\em status} & (0 -\/ no neighbour) status in return (default\+: False) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\mbox{[}\{ \textquotesingle{}composition\textquotesingle{}\+: \{\textquotesingle{}H\textquotesingle{}\+: 2, \textquotesingle{}e\textquotesingle{}\+:1\}, \textquotesingle{}label\textquotesingle{}\+: \textquotesingle{}H2 e1\textquotesingle{}, \textquotesingle{}count\textquotesingle{}\+: \mbox{[}Nmol\mbox{[}step\mbox{]} for step in range(\+Nstep)\mbox{]} \}, ...\mbox{]}, (l\+\_\+of\+\_\+p==on) \{\textquotesingle{} \textquotesingle{}label\textquotesingle{}\+: \mbox{[}label\mbox{]} = id, \textquotesingle{}particle\+\_\+attach\textquotesingle{}\+: \mbox{[}\mbox{[}id for idp in range(\+Npart)\mbox{]} for step in range(\+Nstep)\mbox{]} \}, ...\mbox{]} \} 
+\mbox{[}\{ \textquotesingle{}composition\textquotesingle{}\+: \{\textquotesingle{}H\textquotesingle{}\+: 2, \textquotesingle{}e\textquotesingle{}\+:1\}, \textquotesingle{}label\textquotesingle{}\+: \textquotesingle{}H2 e1\textquotesingle{}, \textquotesingle{}count\textquotesingle{}\+: \mbox{[}Nmol\mbox{[}step\mbox{]} for step in range(\+Nstep)\mbox{]} \},\mbox{[}\mbox{[}stat for idp in range(\+Npart)\mbox{]} for step in range(\+Nstep)\mbox{]}
 \end{DoxyReturn}
+\} 

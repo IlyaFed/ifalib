@@ -21,7 +21,7 @@ struct MolsInfo {
     int Maxsteps;  // Number of steps
     int Maxunique; // Number of unique molecules allowed
     int step; // Current step
-    int* particleAttachemnt; // Size [Npart*Nstep=molinfo_id
+    int* particleAttachment; // Size [Npart*Nstep=molinfo_id
     struct MolInfo* molInfo; // len() = Maxunique // massive of MolInfo
 };
 
@@ -195,6 +195,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
     // to update MolInfo list with unique_count members
     int n_part = 0;
     int k_belong_molinfo_id[kflag+1];
+    int mol_id;
     for (int k = 1; k <= kflag; k++){
         int *typesCount = (int *) malloc (sizeof(int)*molsInfo->Maxtypes);
         for (int i = 0; i < molsInfo->Maxtypes; i++){
@@ -208,7 +209,8 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
             }
         }
         if (k_size > 0){
-            k_belong_molinfo_id[k] = update_mol_info(typesCount, k_size);    
+            k_belong_molinfo_id[k] = k_size;
+            mol_id = update_mol_info(typesCount, k_size);    
         } else {
             free(typesCount);
         }
@@ -221,8 +223,15 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
             printf("neighbour.c: Something wrong %d\n", bl);
         }
     }
+    int part_alone;
     for (int i = 0; i < Npart; i++){
-        molsInfo->particleAttachemnt[molsInfo->step*Npart+i] = k_belong_molinfo_id[belongList[i]];    
+        part_alone=0;
+        if (k_belong_molinfo_id[belongList[i]] > 1)  // has neighbour
+            part_alone=steptocompare+1;
+        if ( (step>0) && (molsInfo->particleAttachment[(molsInfo->step-1)*Npart+i]>0))
+            part_alone = molsInfo->particleAttachment[(molsInfo->step-1)*Npart+i] - 1;
+
+        molsInfo->particleAttachment[molsInfo->step*Npart+i] = part_alone;    
     } 
     
 
@@ -250,7 +259,7 @@ struct MolsInfo* neighbour(struct SystemState sysState, double rcut, int maxuniq
     molsInfo->Maxunique = maxunique;
     molsInfo->step=0;
     molsInfo->molInfo = (struct MolInfo *) malloc (sizeof(struct MolInfo)*maxunique);
-    molsInfo->particleAttachemnt = ( int *) malloc (sizeof(int)*(molsInfo->Maxsteps)*sysState.Npart);
+    molsInfo->particleAttachment = ( int *) malloc (sizeof(int)*(molsInfo->Maxsteps)*sysState.Npart);
     for (int i = 0; i < maxunique; i++){
         molsInfo->molInfo[i].exist=0;
         molsInfo->molInfo[i].quantityByStep = (int *) malloc (sizeof(int)*(molsInfo->Maxsteps));
@@ -278,7 +287,7 @@ void freeMolsInfo(struct MolsInfo *molsInfo){
             free(molsInfo->molInfo[i].typesCount);
         }
     }
-    free(molsInfo->particleAttachemnt);
+    free(molsInfo->particleAttachment);
     free(molsInfo->molInfo);
     free(molsInfo);
 }

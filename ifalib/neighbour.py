@@ -14,7 +14,7 @@
 import os, glob
 import ctypes
 
-def neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=4, l_of_p=False): 
+def neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=4, status=False): 
     '''! Neighbour analysis of system
     @param coord XYZ coordinates of particles, format coord[Nstep][Nparticles][Dimension]
     @param types Type of every particle
@@ -22,15 +22,13 @@ def neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=4, l_of_p=F
     @param rcut Max radius of RDF
     @param step_to_compare Number of steps to compare: dist[step] < rcut && dist[step+step_to_compare] < rcut
     @param maxunique maximum number molecules type to find (default: 4)
-    @param l_of_p Flag (on/off) list_of_particles in return (default: False)
+    @param status (0 - no neighbour) status in return (default: False)
     @return [{
             'composition': {'H': 2, 'e':1},
             'label': 'H2 e1',
             'count': [Nmol[step] for step in range(Nstep)]
-            }, ...], (l_of_p==on) {'
-            'label': [label] = id,
-            'particle_attach': [[id for idp in range(Npart)] for step in range(Nstep)]
-            }, ...]
+            },[[stat for idp in range(Npart)] for step in range(Nstep)]
+            
     }
     '''
     # Load Library
@@ -51,7 +49,7 @@ def neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=4, l_of_p=F
                     ('Maxsteps', ctypes.c_int),
                     ('Maxunique', ctypes.c_int),
                     ('step', ctypes.c_int),
-                    ('particleAttachemnt', ctypes.POINTER(ctypes.c_int)),
+                    ('particleAttachment', ctypes.POINTER(ctypes.c_int)),
                     ('molInfo', ctypes.POINTER(MolInfo))]
 
     class SystemState(ctypes.Structure):
@@ -98,10 +96,8 @@ def neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=4, l_of_p=F
     molsInfo = molsInfo_p.contents #ctypes.byref(molsInfo_p)
   
     list_of_molecules = {}
-    list_of_particles = {
-        'label': {},
-        'particle_attach': [[0 for idp in range(Npart)] for step in range(molsInfo.Maxsteps) ] # [step][idp]  
-    }
+    particles_status = [[0 for idp in range(Npart)] for step in range(molsInfo.Maxsteps) ] # [step][idp]  
+    
     for i in range(molsInfo.Maxunique):
         # print ("molInfo[{:d}]: ".format(i), molsInfo.molInfo[i].exist)
         if (molsInfo.molInfo[i].exist == 0): break
@@ -131,12 +127,12 @@ def neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=4, l_of_p=F
             'composition': composition,
             'count_of_particles': count_of_particles
         }
-        list_of_particles['label'][label]=i
+        #list_of_particles['label'][label]=i
     
     # Create list of particle attachments
     for step in range(molsInfo.Maxsteps):
         for idp in range(Npart):
-            list_of_particles['particle_attach'][step][idp]=molsInfo.particleAttachemnt[step*Npart + idp]
+            particles_status[step][idp]=molsInfo.particleAttachment[step*Npart + idp]
 
 
     # Free memory
@@ -145,7 +141,7 @@ def neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=4, l_of_p=F
 
     del Rpart, Rpart_c_double, types_for_c, Types_c_int
     
-    if l_of_p:
-        return list_of_molecules, list_of_particles
+    if status:
+        return list_of_molecules, particles_status
     else:
         return list_of_molecules

@@ -1,1 +1,1 @@
-Fix bug with kflag-- without new kflag in neighbour.c
+Improve algoritm to find particles which was before dissociation
