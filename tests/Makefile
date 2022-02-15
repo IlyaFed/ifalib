@@ -1,4 +1,4 @@
-test:  neighbour
+test: rdf neighbour
 	
 rdf:
 	gcc test_rdf.c -o test_rdf -lm
