@@ -33,6 +33,7 @@ struct  SystemState
     int Npart;
     int Nsteps;
     int maxtypes;
+    int steptocompare;
     int* types;
     double cell;
     double* r; // r[Nstep*Npart*3 + Npart*3 + dimenstion] = r[Npart][dimension]
@@ -138,6 +139,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
     */
     // Get number of particles in system
     int Npart = sysState.Npart;
+    int steptocompare = sysState.steptocompare;
     // printf ("run get neighbour\n");
     // Split
     int belongList[Npart];
@@ -156,8 +158,12 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
         }
         for (int j = i+1; j < Npart; j++){
             // check distance to this particle
-            dist1 = get_distance(&sysState.r[step*Npart*3 + i*3], &sysState.r[step*Npart*3 + j*3], sysState.cell);
-            dist2 = get_distance(&sysState.r[(step+1)*Npart*3 + i*3], &sysState.r[(step+1)*Npart*3 + j*3], sysState.cell);
+            dist1 = get_distance(&sysState.r[step*Npart*3 + i*3], 
+                                 &sysState.r[step*Npart*3 + j*3], 
+                                 sysState.cell);
+            dist2 = get_distance(&sysState.r[(step+steptocompare)*Npart*3 + i*3], 
+                                 &sysState.r[(step+steptocompare)*Npart*3 + j*3], 
+                                 sysState.cell);
             // printf ("dist1: %f dist2: %f\n", dist1, dist2);
             // printf ("x1: %f x2: %f\n", sysState[0].r[i*3], sysState[0].r[j*3]);
             if (dist1 < rcut && dist2 < rcut){
@@ -221,7 +227,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
 
 struct MolsInfo* neighbour(struct SystemState sysState, double rcut, int maxunique){
     /*! \brief Function return Step dependent list of particle culsters from X,Y,Z coords of particles
-    1) For every step in Nsteps, we get sysState[step] and sysState[step+1]. 
+    1) For every step in Nsteps, we get sysState[step] and sysState[step+steptocompare]. 
     2) Look, which particles stay together (distance less then rcut) in both steps. (bound pair)
     3) Combine bouned pairs into clusters. 
     4) Analyse compositions of such clusters to create list of unique combination
@@ -237,22 +243,22 @@ struct MolsInfo* neighbour(struct SystemState sysState, double rcut, int maxuniq
     // printf ( "Rcut: %f\n", rcut);
     molsInfo = (struct MolsInfo *) malloc (sizeof(struct MolsInfo));
     molsInfo->Maxtypes = sysState.maxtypes;
-    molsInfo->Maxsteps = sysState.Nsteps-1;
+    molsInfo->Maxsteps = sysState.Nsteps-sysState.steptocompare;
     molsInfo->Maxunique = maxunique;
     molsInfo->step=0;
     molsInfo->molInfo = (struct MolInfo *) malloc (sizeof(struct MolInfo)*maxunique);
-    molsInfo->particleAttachemnt = ( int *) malloc (sizeof(int)*(sysState.Nsteps-1)*sysState.Npart);
+    molsInfo->particleAttachemnt = ( int *) malloc (sizeof(int)*(molsInfo->Maxsteps)*sysState.Npart);
     for (int i = 0; i < maxunique; i++){
         molsInfo->molInfo[i].exist=0;
-        molsInfo->molInfo[i].quantityByStep = (int *) malloc (sizeof(int)*(sysState.Nsteps-1));
-        for (int j = 0; j < sysState.Nsteps-1; j++){
+        molsInfo->molInfo[i].quantityByStep = (int *) malloc (sizeof(int)*(molsInfo->Maxsteps));
+        for (int j = 0; j < molsInfo->Maxsteps; j++){
             molsInfo->molInfo[i].quantityByStep[j] = 0;
         }   
     }
     // return *molsInfo; // TODO
     // printf ("Debug after initial: exist: %d\n", molsInfo->molInfo[0].exist);
     // printf ("here %d\n", sysState.Nsteps);
-    for (int step=0; step<sysState.Nsteps-1; step++){
+    for (int step=0; step<molsInfo->Maxsteps; step++){
         get_neighboard_list(sysState, step, rcut);
         molsInfo->step++;
     }

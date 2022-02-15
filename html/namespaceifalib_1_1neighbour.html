@@ -78,15 +78,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4c83e05d4b98d8ff39fb473366088046"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceifalib_1_1neighbour.html#a4c83e05d4b98d8ff39fb473366088046">neighbour</a> (coord, types, cell, rcut, maxunique=4, l_of_p=False)</td></tr>
-<tr class="memdesc:a4c83e05d4b98d8ff39fb473366088046"><td class="mdescLeft">&#160;</td><td class="mdescRight">Neighbour analysis of system.  <a href="namespaceifalib_1_1neighbour.html#a4c83e05d4b98d8ff39fb473366088046">More...</a><br /></td></tr>
-<tr class="separator:a4c83e05d4b98d8ff39fb473366088046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aedde88a06b3e349d80c7a865513164"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceifalib_1_1neighbour.html#a3aedde88a06b3e349d80c7a865513164">neighbour</a> (coord, types, cell, rcut, step_to_compare=1, maxunique=4, l_of_p=False)</td></tr>
+<tr class="memdesc:a3aedde88a06b3e349d80c7a865513164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Neighbour analysis of system.  <a href="namespaceifalib_1_1neighbour.html#a3aedde88a06b3e349d80c7a865513164">More...</a><br /></td></tr>
+<tr class="separator:a3aedde88a06b3e349d80c7a865513164"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Radial Distribution Analysis. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a4c83e05d4b98d8ff39fb473366088046"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c83e05d4b98d8ff39fb473366088046">&#9670;&nbsp;</a></span>neighbour()</h2>
+<a id="a3aedde88a06b3e349d80c7a865513164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aedde88a06b3e349d80c7a865513164">&#9670;&nbsp;</a></span>neighbour()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -119,6 +119,12 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>step_to_compare</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>maxunique</em> = <code>4</code>, </td>
         </tr>
         <tr>
@@ -142,8 +148,9 @@ Functions</h2></td></tr>
     <tr><td class="paramname">types</td><td>Type of every particle </td></tr>
     <tr><td class="paramname">cell</td><td>Size of cubic cell </td></tr>
     <tr><td class="paramname">rcut</td><td>Max radius of RDF </td></tr>
+    <tr><td class="paramname">step_to_compare</td><td>Number of steps to compare: dist[step] &lt; rcut &amp;&amp; dist[step+step_to_compare] &lt; rcut </td></tr>
     <tr><td class="paramname">maxunique</td><td>maximum number molecules type to find (default: 4) </td></tr>
-    <tr><td class="paramname">l_of_p</td><td>Flag (on/off) list_of_particles in return </td></tr>
+    <tr><td class="paramname">l_of_p</td><td>Flag (on/off) list_of_particles in return (default: False) </td></tr>
   </table>
   </dd>
 </dl>

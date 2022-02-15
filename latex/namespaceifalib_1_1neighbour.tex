@@ -8,7 +8,7 @@ Radial Distribution Analysis.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a4c83e05d4b98d8ff39fb473366088046}{neighbour}} (coord, types, cell, rcut, maxunique=4, l\+\_\+of\+\_\+p=False)
+def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a3aedde88a06b3e349d80c7a865513164}{neighbour}} (coord, types, cell, rcut, step\+\_\+to\+\_\+compare=1, maxunique=4, l\+\_\+of\+\_\+p=False)
 \begin{DoxyCompactList}\small\item\em Neighbour analysis of system. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -16,11 +16,11 @@ def \mbox{\hyperlink{namespaceifalib_1_1neighbour_a4c83e05d4b98d8ff39fb473366088
 Radial Distribution Analysis. 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{namespaceifalib_1_1neighbour_a4c83e05d4b98d8ff39fb473366088046}\label{namespaceifalib_1_1neighbour_a4c83e05d4b98d8ff39fb473366088046}} 
+\mbox{\Hypertarget{namespaceifalib_1_1neighbour_a3aedde88a06b3e349d80c7a865513164}\label{namespaceifalib_1_1neighbour_a3aedde88a06b3e349d80c7a865513164}} 
 \index{ifalib.neighbour@{ifalib.neighbour}!neighbour@{neighbour}}
 \index{neighbour@{neighbour}!ifalib.neighbour@{ifalib.neighbour}}
 \doxysubsubsection{\texorpdfstring{neighbour()}{neighbour()}}
-{\footnotesize\ttfamily def ifalib.\+neighbour.\+neighbour (\begin{DoxyParamCaption}\item[{}]{coord,  }\item[{}]{types,  }\item[{}]{cell,  }\item[{}]{rcut,  }\item[{}]{maxunique = {\ttfamily 4},  }\item[{}]{l\+\_\+of\+\_\+p = {\ttfamily False} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily def ifalib.\+neighbour.\+neighbour (\begin{DoxyParamCaption}\item[{}]{coord,  }\item[{}]{types,  }\item[{}]{cell,  }\item[{}]{rcut,  }\item[{}]{step\+\_\+to\+\_\+compare = {\ttfamily 1},  }\item[{}]{maxunique = {\ttfamily 4},  }\item[{}]{l\+\_\+of\+\_\+p = {\ttfamily False} }\end{DoxyParamCaption})}
 
 
 
@@ -36,9 +36,11 @@ Neighbour analysis of system.
 \hline
 {\em rcut} & Max radius of R\+DF \\
 \hline
+{\em step\+\_\+to\+\_\+compare} & Number of steps to compare\+: dist\mbox{[}step\mbox{]} $<$ rcut \&\& dist\mbox{[}step+step\+\_\+to\+\_\+compare\mbox{]} $<$ rcut \\
+\hline
 {\em maxunique} & maximum number molecules type to find (default\+: 4) \\
 \hline
-{\em l\+\_\+of\+\_\+p} & Flag (on/off) list\+\_\+of\+\_\+particles in return \\
+{\em l\+\_\+of\+\_\+p} & Flag (on/off) list\+\_\+of\+\_\+particles in return (default\+: False) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

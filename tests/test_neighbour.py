@@ -9,7 +9,7 @@ def test_neighbour():
     rcut=5.0
     maxunique = 2
 
-    returned_dict= neighbour.neighbour(coord, types, cell, rcut, maxunique)
+    returned_dict= neighbour.neighbour(coord, types, cell, rcut, step_to_compare=1, maxunique=maxunique)
     # print (returned_dict)
     print (returned_dict)
     assert (len(returned_dict)>0)
@@ -39,7 +39,7 @@ def test_h_h2_structures():
                         Types.append("H")
         Coords.append(Coord_point)
     
-    returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, Maxunique)
+    returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, step_to_compare=1, maxunique=Maxunique)
     print (returned_dict)
     assert(returned_dict['H1']['count_of_particles'][0]==Npart/3)
     assert(returned_dict['H2']['count_of_particles'][0]==2*Npart/3)
@@ -52,7 +52,7 @@ def test_h_h2_h3_h4_structures():
     Rcut = 1.4
     Cell = 20.0
     dCell = 2.0
-    Nsteps = 2
+    Nsteps = 20
     Maxunique = 10
     NinCell = int(Cell/dCell)
     Npart = int(NinCell**3*1.5)+3
@@ -86,7 +86,7 @@ def test_h_h2_h3_h4_structures():
         Coords.append(Coord_point)
 
 
-    returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, Maxunique)
+    returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, step_to_compare=4, maxunique=Maxunique)
     print (returned_dict)
     assert(returned_dict['H1']['count_of_particles'][0]==(Npart-3)/3)
     assert(returned_dict['H2']['count_of_particles'][0]==2*((Npart-3)/3-2))
@@ -125,7 +125,7 @@ def test_h_h2_e_structures():
                         Types.append("e")
         Coords.append(Coord_point)
     
-    returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, Maxunique)
+    returned_dict = neighbour.neighbour(Coords, Types, Cell, Rcut, step_to_compare=1, maxunique=Maxunique)
     print (returned_dict)
     assert(returned_dict['H1 e1']['count_of_particles'][0]==Npart/3)
     assert(returned_dict['H2 e2']['count_of_particles'][0]==2*Npart/3)

@@ -18,7 +18,7 @@ clean:
 
 git: clean doxy
 	git add *
-	git commit -m "Add particle attachment to neighbour analysis"
+	git commit -m "Create step_to_compare in neighbour"
 	git push
 
 activate:

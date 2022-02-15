@@ -15,6 +15,7 @@ int test_h2_structures(){
     sysState.r = (double *) malloc (sizeof(double)*Npart*3*Nsteps);
     sysState.cell = Cell;
     sysState.maxtypes = 1;
+    sysState.steptocompare = 1;
     sysState.Nsteps = Nsteps;
     for (int step=0; step< Nsteps; step++){
         int idp=0;
@@ -59,6 +60,7 @@ int test_h_h2_structures(){
     sysState.r = (double *) malloc (sizeof(double)*Npart*3*Nsteps);
     sysState.cell = Cell;
     sysState.maxtypes = 1;
+    sysState.steptocompare = 1;
     sysState.Nsteps = Nsteps;
     for (int step=0; step< Nsteps; step++){
         int idp=0;
@@ -106,6 +108,7 @@ int test_h_structures(){
     sysState.r = (double *) malloc (sizeof(double)*Npart*3*Nsteps);
     sysState.cell = Cell;
     sysState.maxtypes = 1;
+    sysState.steptocompare = 1;
     sysState.Nsteps = Nsteps;
     for (int step=0; step< Nsteps; step++){
         int idp=0;
@@ -136,7 +139,7 @@ int test_h_random(){
     int random_number;
     double Rcut=1.0;
     double Cell=10.0;
-    int Nsteps=2;
+    int Nsteps=3;
     int Npart = 10000;
     struct  SystemState sysState;
     sysState.types = (int *) malloc (sizeof(int)*Npart);
@@ -144,6 +147,7 @@ int test_h_random(){
     sysState.r = (double *) malloc (sizeof(double)*Npart*3*Nsteps);
     sysState.cell = Cell;
     sysState.maxtypes = 1;
+    sysState.steptocompare = 2;
     sysState.Nsteps = Nsteps;
 
     for (int step=0; step< Nsteps; step++){
@@ -185,6 +189,7 @@ int test_diag_line(){
     sysState.r = (double *) malloc (sizeof(double)*Npart*3*Nsteps);
     sysState.cell = Cell;
     sysState.maxtypes = 1;
+    sysState.steptocompare = 1;
     sysState.Nsteps = Nsteps;
     for (int step=0; step< Nsteps; step++){
         for (int idp=0; idp<Npart; idp++){
