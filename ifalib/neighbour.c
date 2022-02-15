@@ -182,7 +182,10 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
                                 // printf ("add to %d \n", l);
                             }
                         }
-                        kflag--;
+                        // case when we create new kflag
+                        if (kflag_old == kflag){
+                            kflag--;
+                        }
                     }
                 }
             }
@@ -215,7 +218,7 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
     for (int i = 0; i < Npart; i++){
         int bl = belongList[i];
         if (bl > kflag || bl < 1 ){
-            printf("Something wrong %d\n", bl);
+            printf("neighbour.c: Something wrong %d\n", bl);
         }
     }
     for (int i = 0; i < Npart; i++){

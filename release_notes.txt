@@ -1,0 +1,1 @@
+Fix bug with kflag-- without new kflag in neighbour.c

@@ -18,7 +18,7 @@ clean:
 
 git: clean doxy
 	git add *
-	git commit -m "Create step_to_compare in neighbour"
+	git commit -F release_notes.txt
 	git push
 
 activate:
