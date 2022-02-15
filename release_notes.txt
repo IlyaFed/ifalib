@@ -1,1 +1,1 @@
-Improve algoritm to find particles which was before dissociation
+fix bug

@@ -228,8 +228,8 @@ void get_neighboard_list(struct SystemState sysState, int step, double rcut){
         part_alone=0;
         if (k_belong_molinfo_id[belongList[i]] > 1)  // has neighbour
             part_alone=steptocompare+1;
-        if ( (step>0) && (molsInfo->particleAttachment[(molsInfo->step-1)*Npart+i]>0))
-            part_alone = molsInfo->particleAttachment[(molsInfo->step-1)*Npart+i] - 1;
+        else if ( (step>0) && (molsInfo->particleAttachment[(step-1)*Npart+i]>0))
+            part_alone = molsInfo->particleAttachment[(step-1)*Npart+i] - 1;
 
         molsInfo->particleAttachment[molsInfo->step*Npart+i] = part_alone;    
     } 
